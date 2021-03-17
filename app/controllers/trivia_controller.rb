@@ -21,12 +21,10 @@ class TriviaController < ApplicationController
       redirect_to trivium_path(@trivia)
     else
       @answer = Answer.find(params["answer"]["answer"])
-      #byebug
       trivia = Trivium.find(@answer.trivium_id)
       TriviaUser.create(user_id: current_user.id,trivium_id: trivia.id)
 
       if @answer.is_correct
-        # byebug
           current_user.update(score: current_user.score+50)
     end
   end

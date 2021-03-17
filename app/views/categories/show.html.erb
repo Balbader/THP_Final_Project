@@ -1,8 +1,7 @@
 <h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
 
   <% @category.trivia.each do |trivia| %>
-    <li><%=link_to trivia.question, trivium_path(trivia)%> </li>
-  <% end %>
+    <li><%=link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia))%> </li>  <% end %>
 
 
 <h2><%= link_to 'See All Categories', categories_path %></h2>
