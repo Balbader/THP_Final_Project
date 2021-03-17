@@ -6,7 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
-# Ignore dotenv config.
+# Ignore dotenv config. add your own if you need testing
 .env
 
 # Ignore all logfiles and tempfiles.
