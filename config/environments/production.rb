@@ -27,6 +27,10 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
+  #============================================= Asset Pipline code added based on raild documentation regarding rails 6.1.3=============================================
+  config.assets.css_compressor = :yui
+  config.assets.js_compressor = :uglifier
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
