@@ -1,6 +1,8 @@
+<br>
+<br><br>
 <h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
 
-<% if current_user.trivia.blank? %>
+<% if current_user %>
   <% @category.trivia.each do |trivia| %>
     <li><%=link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia))%> </li>
   <% end %>

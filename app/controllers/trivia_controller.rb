@@ -1,7 +1,11 @@
 class TriviaController < ApplicationController
   before_action :authenticate_user!
   def index
+    if current_user
       @trivia = Trivium.all
+    else
+      @trivia = Trivium.where(current_user.trivia.pluck(:id))
+    end
   end
 
   def show
