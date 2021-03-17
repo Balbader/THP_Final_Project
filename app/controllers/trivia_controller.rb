@@ -1,10 +1,7 @@
 class TriviaController < ApplicationController
+  before_action :authenticate_user!
   def index
-    if current_user.trivia.blank?
       @trivia = Trivium.all
-    else
-      @trivia = Trivium.where("id NOT in (?)", current_user.trivia.pluck(:id))
-    end
   end
 
   def show
