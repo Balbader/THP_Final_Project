@@ -5,3 +5,304 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Category.destroy_all
+User.destroy_all
+Trivium.destroy_all
+Answer.destroy_all
+
+trebek = User.create(email: "test@gmail.com", password: "123")
+
+data = { results: [
+    # 09. General Knowledge
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "Area 51 is located in which US state?",
+      correct_answer: "Nevada",
+      incorrect_answers: [
+        "Arizona",
+        "New Mexico",
+        "Utah"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "In the Morse code, which letter is indicated by 3 dots? ",
+      correct_answer: "S",
+      incorrect_answers: [
+        "O",
+        "A",
+        "C"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "boolean",
+      question: "It is automatically considered entrapment in the United States if the police sell you illegal substances without revealing themselves.",
+      correct_answer: "False",
+      incorrect_answers: ["True"]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "Who is a co-founder of music streaming service Spotify?",
+      correct_answer: "Daniel Ek",
+      incorrect_answers: [
+        "Sean Parker",
+        "Felix Miller",
+        "Michael Breidenbruecker"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "Which of these banks are NOT authorized to issue currency notes in Hong Kong?",
+      correct_answer: "OCBC",
+      incorrect_answers: [
+        "HSBC",
+        "Standard Chartered",
+        "Bank of China"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "boolean",
+      question: "&quot;Number 16 Bus Shelter&quot; was a child&#039;s name that was approved by the New Zealand government.",
+      correct_answer: "True",
+      incorrect_answers: ["False"]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "What is the Swedish word for &quot;window&quot;?",
+      correct_answer: "F&ouml;nster",
+      incorrect_answers: [
+        "H&aring;l",
+        "Sk&auml;rm",
+        "Ruta"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "The term &quot;scientist&quot; was coined in which year?",
+      correct_answer: "1833",
+      incorrect_answers: [
+        "1933",
+        "1942",
+        "1796"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "Which one of these Swedish companies was founded in 1943?",
+      correct_answer: "IKEA",
+      incorrect_answers: [
+      "H &amp; M",
+      "Lindex",
+      "Clas Ohlson"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      difficulty: "hard",
+      question: "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
+      correct_answer: "7 years",
+      incorrect_answers: [
+        "2 years",
+        "8 years",
+        "6 months"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "When was the Declaration of Independence approved by the Second Continental Congress?",
+      correct_answer: "July 2, 1776",
+      incorrect_answers: [
+        "May 4, 1776",
+        "June 4, 1776",
+        "July 4, 1776"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "What name represents the letter &quot;M&quot; in the NATO phonetic alphabet?",
+      correct_answer: "Mike",
+      incorrect_answers: [
+        "Matthew",
+        "Mark",
+        "Max"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "What is the defining characteristic of someone who is described as hirsute?",
+      correct_answer: "Hairy",
+      incorrect_answers: [
+        "Rude",
+        "Funny",
+        "Tall"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "Area 51 is located in which US state?",
+      correct_answer: "Nevada",
+      incorrect_answers: [
+        "Arizona",
+        "New Mexico",
+        "Utah"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "boolean",
+      question: "Nutella is produced by the German company Ferrero.",
+      correct_answer: "False",
+      incorrect_answers: ["True"]
+    },
+    {category: "General Knowledge",
+      type: "boolean",
+      question: "The word &quot;news&quot; originates from the first letters of the 4 main directions on a compass (North, East, West, South).",
+      correct_answer: "False",
+      incorrect_answers: ["True"]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "What year was Queen Elizabeth II born?",
+      correct_answer: "1926",
+      incorrect_answers: [
+        "1923",
+        "1929",
+        "1930"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "The term &quot;scientist&quot; was coined in which year?",
+      correct_answer: "1833",
+      incorrect_answers: [
+        "1933",
+        "1942",
+        "1796"
+      ]
+    },
+    {category: "General Knowledge",
+      type: "boolean",
+      question: "Adolf Hitler was born in Australia. ",
+      correct_answer: "False",
+      incorrect_answers: ["True"]
+    },
+    {category: "General Knowledge",
+      type: "multiple",
+      question: "What was the soft drink Pepsi originally introduced as?",
+      correct_answer: "Brad&#039;s Drink",
+      incorrect_answers: [
+        "Pepsin Pop",
+        "Carolina Cola",
+        "Pepsin Syrup"
+      ]
+    },
+    # 10. Entertainment: Books
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "Who wrote &quot;Harry Potter&quot;?",
+      correct_answer: "J.K. Rowling",
+      incorrect_answers: [
+        "J.R.R. Tolkien",
+        "Terry Pratchett",
+        "Daniel Radcliffe"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "By what name was the author Eric Blair better known?",
+      correct_answer: "George Orwell",
+      incorrect_answers: [
+        "Aldous Huxley",
+        "Ernest Hemingway",
+        "Ray Bradbury"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "boolean",
+      question: "The &quot;Berenstein Bears&quot; is the correct spelling of the educational children&#039;s book series&#039; name.",
+      correct_answer: "False",
+      incorrect_answers: ["True"]
+    },
+    {category: "Entertainment: Books",
+      type: "boolean",
+      question: "The book 1984 was published in 1949.",
+      correct_answer: "True",
+      incorrect_answers: ["False"]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+      correct_answer: "Richard Bachman",
+      incorrect_answers: [
+        "J. D. Robb",
+        "Mark Twain",
+        "Lewis Carroll"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "boolean",
+      question: "Stephen Chbosky wrote the book &#039;The Perks of Being A Wallflower&#039;.",
+      correct_answer: "True",
+      incorrect_answers: ["False"]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "J.K. Rowling completed &quot;Harry Potter and the Deathly Hallows&quot; in which hotel in Edinburgh, Scotland?",
+      correct_answer: "The Balmoral",
+      incorrect_answers: [
+        "The Dunstane Hotel",
+        "Hotel Novotel",
+        "Sheraton Grand Hotel &amp; Spa"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "In the novel &quot;Lord of the Rings&quot;, how many rings of power were given to the race of man?",
+      correct_answer: "9",
+      incorrect_answers: [
+        "5",
+        "11",
+        "13"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "What is the make and model of the tour vehicles in &quot;Jurassic Park&quot;?",
+      correct_answer: "1992 Toyota Land Cruiser",
+      incorrect_answers: [
+        "1992 Jeep Wrangler YJ Sahar",
+        "1992 Ford Explorer XLT",
+        "Mercedes M-Class"
+      ]
+    },
+    {category: "Entertainment: Books",
+      type: "multiple",
+      question: "In Alice in Wonderland, what is the name of Alice&#039;s kitten?",
+      correct_answer: "Dinah",
+      incorrect_answers: [
+        "Oscar",
+        "Heath",
+        "Smokey"
+      ]
+    },
+    ]
+}
+
+data[:"results"].each do | result |
+  category = Category.find_or_create_by(name: result[:category])
+
+  trivia = Trivium.find_or_create_by(question: result[:question], category_id: category.id)
+
+  Answer.find_or_create_by(answer: result[:correct_answer], is_correct: true,
+                          trivium_id: trivia.id)
+
+  result[:incorrect_answers].each do | answer |
+    Answer.find_or_create_by(answer: answer, is_correct: false,
+                            trivium_id: trivia.id)
+  end
+end
+
+puts "#{User.count} users created!"
+puts "#{Category.count} categories created!"
+puts "#{Trivium.count} trivia created!"
+puts "#{Answer.count} answers created!"

@@ -1,2 +1,13 @@
-<h1>Trivia#trivia_answer</h1>
-<p>Find me in app/views/trivia/trivia_answer.html.erb</p>
+<div class="center jumbotron">
+  <%= render 'question' %>
+
+  Your answer was <em><%= @answer.answer %>. </em><br>
+  <% if @answer.is_correct %>
+    <h3> You are correct! </h3>
+  <% else %>
+    <h3> I'm sorry; the correct answer was <em><%= @trivia.answers[0].answer %></em>. </h3>
+  <% end %><br>
+
+  <h4><%= link_to "Go Back to #{@trivia.category.name}",
+          category_path(@trivia.category) %></h4>
+</div>

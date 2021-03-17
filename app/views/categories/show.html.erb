@@ -1,2 +1,8 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
+
+  <% @category.trivia.each do |trivia| %>
+    <li><%=link_to trivia.question, trivium_path(trivia)%> </li>
+  <% end %>
+
+
+<h2><%= link_to 'See All Categories', categories_path %></h2>
