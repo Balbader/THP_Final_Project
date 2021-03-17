@@ -8,6 +8,7 @@ gem 'stripe'
 gem 'mini_magick'
 gem 'mailjet'
 gem 'dotenv-rails'
+gem 'jquery-rails'
 
 group :development do
   gem "better_errors"
