@@ -1,2 +1,20 @@
-<h1>Trivia#new</h1>
-<p>Find me in app/views/trivia/new.html.erb</p>
+<h3> Create your own trivia question! </h3>
+
+<%= form_for @trivium do |f| %>
+<%= f.label :question %>
+<%= f.text_field :question %>
+<%= f.label :category_id %>
+<%= f.collection_select :category_id, Category.all, :id, :name %>
+<% (1..4).each do |idx| %>
+  <div class="answer-item">
+    <%= label_tag "answer #{idx}" %>
+    <%= text_field_tag :"trivium[answers][#{idx}][answer]" %>
+    <%= check_box_tag :"trivium[answers][#{idx}][is_correct]", true, false %>
+    <%= label_tag 'is correct?' %>
+
+  </div>
+<% end %>
+
+<%= f.submit %>
+<% end %>
+<br>
