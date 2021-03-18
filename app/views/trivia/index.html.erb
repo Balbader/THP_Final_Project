@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 All Trivia Questions
 <br>
 <br>
@@ -8,3 +9,18 @@ All Trivia Questions
 
 <%= link_to "Play now",
            trivium_path(@trivia.ids) %>
+=======
+
+
+
+
+<br><br><br><br><br>
+
+<% @user.each do |user| %>
+<li><%= user.email%> <%= user.score%>
+</li>
+<%end%>
+
+<%= link_to "Play now",
+           trivium_path(@trivia.ids) %>
+>>>>>>> c8957cff887a61fd91d8e358aa922c831ded4cea

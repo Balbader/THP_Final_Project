@@ -3,13 +3,21 @@
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> c8957cff887a61fd91d8e358aa922c831ded4cea
   <%= form_for @answer, url: trivia_answer_path do | f | %>
     <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
                                         :answer) %></h3>
 
     <%= f.submit "Submit Answer", class: "btn btn-lg btn-primary" %>
   <% end %><br>
+<<<<<<< HEAD
 
   <%= link_to "Delete", trivium_path(@trivia), :confirm => "Are you sure?", method: :delete %>
 </div>
+=======
+</div>
+>>>>>>> c8957cff887a61fd91d8e358aa922c831ded4cea

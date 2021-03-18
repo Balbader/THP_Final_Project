@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
 
   <% @category.trivia.each do |trivia| %>
@@ -5,3 +6,21 @@
 
 
 <h2><%= link_to 'See All Categories', categories_path %></h2>
+=======
+<br>
+<br><br>
+<h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
+
+<% if current_user %>
+  <% @category.trivia.each do |trivia| %>
+    <li><%=link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia))%> </li>
+  <% end %>
+
+<% else %>
+  <% @category.trivia.where("id NOT in (?)", current_user.trivia.pluck(:id)).each do |trivia| %>
+    <li><%= link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia)) %></li>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'See All Categories', categories_path %></h2>
+>>>>>>> c8957cff887a61fd91d8e358aa922c831ded4cea
