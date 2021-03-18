@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
+  root 'static_pages#home_page'
   get 'static_pages/secret'
+<<<<<<< HEAD
   get 'static_pages/stripe_button'
+=======
+  get 'about_us', to: 'static_pages#about_us'
+  get 'rules', to: 'static_pages#rules'
+  get 'faq', to: 'static_pages#faq'
+  get 'community', to: 'static_pages#community'
+  get 'terms', to: 'static_pages#terms'
+  get 'privacy', to: 'static_pages#privacy'
+>>>>>>> development
   resources :categories, only: [:show, :index]
   resources :trivia
   resources :answers

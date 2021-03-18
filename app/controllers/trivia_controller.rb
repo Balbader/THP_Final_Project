@@ -24,8 +24,15 @@ class TriviaController < ApplicationController
       trivia = Trivium.find(@answer.trivium_id)
       TriviaUser.create(user_id: current_user.id, trivium_id: trivia.id)
       if @answer.is_correct
-          current_user.update(score: current_user.score+10)  
+          current_user.update(score: current_user.score+10)
+      else
+          current_user.update(score: current_user.score-10)
       end
+    end
+    if current_user.score < 0
+      flash[:error] = "Game over"
+      redirect_to trivium_path(@trivia)
+      current_user.update(score: current_user.score=0)
     end
   end
 
