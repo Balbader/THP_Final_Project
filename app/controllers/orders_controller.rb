@@ -1,25 +1,30 @@
 class OrdersController < ApplicationController
-  def new
+  def create
+    session = Stripe::Checkout::Session.create(
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          name: "Ludee-org Stripe Checkout",
+          amount: 1000,
+          currency: "eur",
+          quantity: 1,
+        },        
+      ],
+      mode: 'payment',
+      success_url: 'https://example.com/success',
+      cancel_url: 'https://example.com/cancel',
+    )
+    respond_to do |format|
+      format.js
+    end
   end
 
-  def create
-    # Before the rescue, at the beginning of the method
-    @stripe_amount = 1000
-    begin
-      customer = Stripe::Customer.create({
-        email: params[:stripeEmail],
-        source: params[:stripeToken],
-      })
-      charge = Stripe::Charge.create({
-        customer: customer.id,
-        amount: @stripe_amount,
-        description: "Achat d'un produit",
-        currency: 'eur',
-      })
-      rescue Stripe::CardError => e
-      flash[:error] = e.message
-      redirect_to new_order_path
-    end
-    # After the rescue, if the payment succeeded
+  def success
+    @session = Stripe::Checkout::Session.retrive(params[:session_id])
+    @payment_intent = Stripe::PaymentIntent.retrieve(@session.payment_intent)
+    new_order = Order.create(user_id:current_user.id)
+  end
+
+  def cancel
   end
 end
