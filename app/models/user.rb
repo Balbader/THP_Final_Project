@@ -5,4 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :trivia_users
          has_many :trivia, through: :trivia_users
+
+         after_create :welcome_send
+
+         def welcome_send
+           UserMailer.welcome_email(self).deliver_now
+         end
 end
