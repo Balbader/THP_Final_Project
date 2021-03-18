@@ -3,8 +3,7 @@ All Trivia Questions
 <br>
 Categories:
 <% @trivia.map{|trivia| trivia.category.name}.uniq.each do |cat| %>
-  <li><%= link_to(cat, category_path(Category.find_by(name: cat).id)) %></li>
+  <li><%= link_to(cat, trivium_path(Category.find_by(name: cat).id)) %></li>
 <% end %>
 <br>
 
-<%= link_to("create your own",new_trivium_path) %>

@@ -7,7 +7,7 @@
   <% else %>
     <h3> I'm sorry; the correct answer was <em><%= @trivia.answers[0].answer %></em>. </h3>
   <% end %><br>
-
+ <li><%= link_to "Your Score: #{current_user.score}" %></li>
   <h4><%= link_to "Go to next question",
-           trivium_path(rand(@trivia.id)) %></h4>
+           trivium_path(@trivia.id+1) %></h4>
 </div>
