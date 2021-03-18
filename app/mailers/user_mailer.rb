@@ -10,5 +10,13 @@ class UserMailer < ApplicationMailer
           subject: 'Welcome to the Ludee.org',
         )
       end
+
+      def order_email(user)
+        @user = User.find(user)
+
+        @url = 'https://ludee-org.herokuapp.com/'
+
+        mail(to: @user.email, subject: 'Ludee subscribe payment') 
+      end
 end
 

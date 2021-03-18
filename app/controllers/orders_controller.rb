@@ -21,6 +21,7 @@ class OrdersController < ApplicationController
   def success
     @session = Stripe::Checkout::Session.retrieve(params[:session_id])
     @payment_intent = Stripe::PaymentIntent.retrieve(@session.payment_intent)
+    UserMailer.order_email(current_user.id).deliver_now
   end
 
   def cancel
