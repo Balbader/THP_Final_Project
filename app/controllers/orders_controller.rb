@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def create
-    session = Stripe::Checkout::Session.create(
+    @session = Stripe::Checkout::Session.create(
       payment_method_types: ["card"],
       line_items: [
         {
@@ -11,8 +11,8 @@ class OrdersController < ApplicationController
         },        
       ],
       mode: 'payment',
-      success_url: 'https://example.com/success',
-      cancel_url: 'https://example.com/cancel',
+      success_url: orders_success_url,
+      cancel_url: orders_cancel_url,
     )
     respond_to do |format|
       format.js
