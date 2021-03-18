@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   resources :answers
   post "/trivia/:id", to: "trivia#trivia_answer", as: "trivia_answer"
   devise_for :users
-  
+  resource :orders, only: [:create, :success, :cancel]
   # Stripe scope
-  scope '/orders' do
-    post 'create', to: 'orders#create', as: 'orders_create'
-    get 'cancel', to: 'orders#cancel', as: 'orders_cancel'
-    get 'success', to: 'orders#success', as: 'orders_success'
-  end
+ # scope '/orders' do
+  #  post 'create', to: 'orders#create', as: 'orders_create'
+   # get 'cancel', to: 'orders#cancel', as: 'orders_cancel'
+    #get 'success', to: 'orders#success', as: 'orders_success'
+  #end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

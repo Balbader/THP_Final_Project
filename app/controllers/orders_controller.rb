@@ -10,9 +10,8 @@ class OrdersController < ApplicationController
           quantity: 1,
         },        
       ],
-      mode: 'payment',
-      success_url: orders_success_url,
-      cancel_url: orders_cancel_url,
+      success_url: success_path + '?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: cancel_url,
     )
     respond_to do |format|
       format.js
@@ -20,9 +19,8 @@ class OrdersController < ApplicationController
   end
 
   def success
-    @session = Stripe::Checkout::Session.retrive(params[:session_id])
+    @session = Stripe::Checkout::Session.retrieve(params[:session_id])
     @payment_intent = Stripe::PaymentIntent.retrieve(@session.payment_intent)
-    new_order = Order.create(user_id:current_user.id)
   end
 
   def cancel
