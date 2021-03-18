@@ -9,5 +9,5 @@
   <% end %><br>
 
   <h4><%= link_to "Go to Next Question",
-          trivium_path(rand(@trivia.id))%></h4>
+          trivium_path(@trivia.id+1) %></h4>
 </div>
