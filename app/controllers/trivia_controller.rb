@@ -1,6 +1,7 @@
 class TriviaController < ApplicationController
   before_action :authenticate_user!
   def index
+    @user = User.all
     if current_user
       @trivia = Trivium.all
     else
