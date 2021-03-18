@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'static_pages/stripe_button'
   resources :categories, only: [:show, :index]
   resources :trivia
+  resources :answers
+  post "/trivia/:id", to: "trivia#trivia_answer", as: "trivia_answer"
   devise_for :users
   
   # Stripe scope

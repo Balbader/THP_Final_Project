@@ -14,7 +14,7 @@
 
     <div class="form-group">
       <label for="formGroupEcampleInput"> <%= f.label :email %> </label>
-      <input type="text" class="form-control" id="formGroupEcampleInput" placegolder="myemail.com" <%= f.email_field :email, autofocus: true, autocomplete: "email" %> </input>
+      <input type="text" class="form-control" id="formGroupEcampleInput" placeholder="email@email.com" <%= f.email_field :email, autofocus: true, autocomplete: "email" %> </input>
     </div>
 
     <div class="form-group">
@@ -22,12 +22,12 @@
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <input type="text" class="form-control" id="formGroupEcampleInput" placegolder="myemail.com" <%= f.password_field :password, autocomplete: "new-password" %> </input>
+      <input type="password" class="form-control" id="inputPassword" placeholder="password" <%= f.password_field :password, autocomplete: "new-password" %> </input>
     </div>
 
     <div class="form-group">
       <label for="formGroupExampleInput2">Password Confirmation</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <input type="password" id="inputPassword" class="form-control" placeholder="password" required="" <%= f.password_field :password_confirmation, autocomplete: "new-password" %></input>
     </div>
 
     <div class="actions">
