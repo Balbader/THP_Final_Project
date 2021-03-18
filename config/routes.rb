@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   resources :categories, only: [:show, :index]
   resources :trivia
   resources :answers
-  post "/trivia/:id", to: "trivia#trivia_answer", as: "trivia_answer"
+  scope '/trivia' do
+    post ':id', to: 'trivia#trivia_answer', as: 'trivia_answer'
+  end
   devise_for :users
 
   # Stripe scope
