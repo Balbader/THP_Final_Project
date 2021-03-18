@@ -18,11 +18,11 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :password %>
+      <label for="formGroupEcampleInput2"> <%= f.label :password %> </label>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <input type="text" class="form-control" id="formGroupEcampleInput" placegolder="myemail.com" <%= f.password_field :password, autocomplete: "new-password" %> </input>
     </div>
 
     <div class="form-group">
