@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/stripe_button'
 
-  # Static Pages routes
+  # Static Pages Scope
   scope '/', controller: :static_pages do
     get :terms, :community, :privacy, :rules, :faq, :about_us, :stripe_button, :secret
   end
