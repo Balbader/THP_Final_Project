@@ -1,9 +1,10 @@
 All Trivia Questions
 <br>
 <br>
-Categories:
-<% @trivia.map{|trivia| trivia.category.name}.uniq.each do |cat| %>
-  <li><%= link_to(cat, trivium_path(Category.find_by(name: cat).id)) %></li>
-<% end %>
+<br>
+<br>
+<br>
 <br>
 
+<%= link_to "Play now",
+           trivium_path(@trivia.ids) %>
