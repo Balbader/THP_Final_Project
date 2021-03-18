@@ -1,7 +1,12 @@
-var stripe = Stripe('<=% Rails.configuration.stripe[:publishable_key] %>');
+console.log("Ludee.org");
 
-stripe.redirectToCheckout({
-  sessionId: '<%= @session.id %>'
-}).then(function (result) {
-  console.log(result.error.message)
-});3
+var stripe = Stripe('<=% Rails.configuration.stripe[:publishable_key] %>');
+var checkoutButton = document.getElementById('stripe';)
+
+checkoutButton.addEventListener('click', function() {
+  stripe.redirectToCheckout({
+    sessionId: '<%= @session.id %>'
+  }).then (function (result) {
+    console.log(result.error.message);
+  });
+});
