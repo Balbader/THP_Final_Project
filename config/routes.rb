@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   scope '/trivia' do
     post ':id', to: 'trivia#trivia_answer', as: 'trivia_answer'
   end
-  devise_for :users
+  
+  devise_for :users, :controllers => {:registrations => "registrations"}
 
   # Stripe scope
   scope '/orders' do
