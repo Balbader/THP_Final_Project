@@ -1,14 +1,9 @@
-<h1> Find me in app/views/static_pages/stripe_button.html</h1>
-<p> Hello World </p>
-
-<div class="container">
-    <div id="stripe">
-        <% if user_signed_in? %>
-            <%= button_to 'subscribe now', orders_create_path, method: :post, remote: true %>
-        <%else %>
-            <%= button_to 'please sign in in order to subscribe to ludee program',  new_user_session_path %>
-        <%end%>
+<div class="paid">
+    <div class="container">
+        <h3> For playing thank's to subscribe for a mounth. </h3>
+        <p> Help current students to repay their student loans. </p>
+        <div id="stripe">
+            <%= button_to 'subscribe now', orders_create_path, class: "btn-stripe btn btn-block", method: :post, remote: true %>
+        </div>
     </div>
 </div>
-
-       
