@@ -1,0 +1,13 @@
+<div class="center jumbotron">
+  <%= render 'question' %>
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+
+  <%= form_for @answer, url: trivia_answer_path do | f | %>
+    <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
+                                        :answer) %></h3>
+
+    <%= f.submit "Submit Answer", class: "btn btn-lg btn-primary" %>
+  <% end %><br>
+</div>

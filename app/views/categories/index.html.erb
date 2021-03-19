@@ -1,0 +1,6 @@
+<div class="center jumbotron">
+  <h1>Categories</h1>
+  <% @categories.each do |cat| %>
+    <%= link_to cat.name, category_path(cat), class: "btn btn-lg btn-primary" %>
+  <% end %>
+</div>

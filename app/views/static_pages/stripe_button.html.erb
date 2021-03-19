@@ -1,0 +1,9 @@
+<div class="paid">
+    <div class="container">
+        <h3> For playing thank's to subscribe for a month. </h3>
+        <p> Help current students to repay their student loans. </p>
+        <div id="stripe">
+            <%= button_to 'subscribe now', orders_create_path, class: "btn-stripe btn btn-block", method: :post, remote: true %>
+        </div>
+    </div>
+</div>

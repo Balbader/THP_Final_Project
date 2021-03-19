@@ -9,10 +9,13 @@ gem 'mini_magick'
 gem 'mailjet'
 gem 'dotenv-rails'
 gem 'jquery-rails'
-
+gem 'devise'
+gem 'bootstrap'
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'mailjet'
+  
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'

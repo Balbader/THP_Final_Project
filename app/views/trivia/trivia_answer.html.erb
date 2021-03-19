@@ -1,0 +1,12 @@
+
+  <div class="center jumbotron">
+      <%= render 'question' %>
+      Your answer was <em><%= @answer.answer %>. </em><br>
+        <% if @answer.is_correct %>
+          <h3> You are correct! </h3>
+          <% else %>
+          <h3> I'm sorry; the correct answer was <em><%= @trivia.answers[0].answer %> and you lost 10 points</em>. </h3> 
+        <% end %><br>
+      <h4><%= link_to "Go to Next Question", trivium_path(@trivia.id+1) %></h4>
+          <%= link_to "Back to Dashboard",trivia_path, class: "btn btn-lg btn-primary" %>
+  </div>

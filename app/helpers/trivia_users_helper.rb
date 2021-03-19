@@ -1,0 +1,2 @@
+module TriviaUsersHelper
+end
