@@ -3,6 +3,12 @@
 
 <div class="container">
     <div id="stripe">
-        <%= button_to 'subscribe now', orders_create_path, method: :post, remote: true %>
+        <% if user_signed_in? %>
+            <%= button_to 'subscribe now', orders_create_path, method: :post, remote: true %>
+        <%else %>
+            <%= button_to 'please sign in in order to subscribe to ludee program',  new_user_session_path %>
+        <%end%>
     </div>
 </div>
+
+       
