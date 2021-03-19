@@ -11,19 +11,13 @@
     outline: none;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
-}
-
 section {
     padding: 60px 0;
 }
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #000000;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -112,13 +106,9 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #d075e9 !important;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
-    color: #007b5e !important;
-}
 
 .frontside .card .card-body img {
     width: 120px;
