@@ -11,7 +11,7 @@ User.destroy_all
 Trivium.destroy_all
 Answer.destroy_all
 
-ludee = User.create(email: "ludee@gmail.com", password: "123456")
+#ludee = User.create(email: "ludee@gmail.com", password: "123456")
 
 data = { results: [
     # 09. General Knowledge
@@ -1223,7 +1223,7 @@ data[:"results"].each do | result |
   end
 end
 
-puts "#{User.count} users created!"
-puts "#{Category.count} categories created!"
-puts "#{Trivium.count} trivia created!"
-puts "#{Answer.count} answers created!"
+#puts "#{User.count} users created!"
+#puts "#{Category.count} categories created!"
+#puts "#{Trivium.count} trivia created!"
+#puts "#{Answer.count} answers created!"
