@@ -1,0 +1,18 @@
+/* devise section */
+
+#sign .container-devise {
+    padding: 150px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rounded-pill-dev {
+    border-radius: 0.5rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  
+  }
