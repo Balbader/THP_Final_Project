@@ -1,13 +1,4 @@
 
-
-
-
-<br><br><br><br><br>
-
-<% @user.each do |user| %>
-<li><%= user.email%> <%= user.score%>
-</li>
-<%end%>
-
-<%= link_to "Play now",
-           trivium_path(@trivia.ids) %>
+    
+    <%= render 'index'%>
+    
