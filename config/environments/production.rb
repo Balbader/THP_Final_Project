@@ -29,7 +29,7 @@ Rails.application.configure do
 
   #============================================= Asset Pipline code added based on raild documentation regarding rails 6.1.3=============================================
   config.assets.css_compressor = :yui
-  config.assets.js_compressor = :uglifier
+  #config.assets.js_compressor =  Uglifier.new(harmony: true)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
