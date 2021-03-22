@@ -3,7 +3,7 @@
       <%= render 'question' %>
       Your answer was <em><%= @answer.answer %>. </em><br>
         <% if @answer.is_correct %>
-          <h3> You are correct! </h3>
+          <h3> You are correct! and you just earned 10 points </h3>
           <% else %>
           <h3> I'm sorry; the correct answer was <em><%= @trivia.answers[0].answer %> and you lost 10 points</em>. </h3> 
         <% end %><br>

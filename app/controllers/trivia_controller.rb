@@ -15,25 +15,29 @@ class TriviaController < ApplicationController
   end
 
   def trivia_answer
-    @trivia = Trivium.find(params[:id])
-    if params[:answer][:answer].blank?
-      flash[:error] = "Answer cannot be blank"
-      redirect_to trivium_path(@trivia)
-    else
-      @answer = Answer.find(params[:answer][:answer])
-      trivia = Trivium.find(@answer.trivium_id)
-      TriviaUser.create(user_id: current_user.id, trivium_id: trivia.id)
-      if @answer.is_correct
-          current_user.update(score: current_user.score+10)
+      @trivia = Trivium.find(params[:id])
+      if params[:answer][:answer].blank?
+        flash[:error] = "Answer cannot be blank"
+        redirect_to trivium_path(@trivia)
       else
-          current_user.update(score: current_user.score-10)
+        @answer = Answer.find(params[:answer][:answer])
+        trivia = Trivium.find(@answer.trivium_id)
+        TriviaUser.create(user_id: current_user.id, trivium_id: trivia.id)
+            if @answer.is_correct
+                current_user.update(score: current_user.score+10)
+                redirect_to trivium_path(@trivia.id+1)
+                flash[:succes] = "correct!"
+            else
+                current_user.update(score: current_user.score-10)
+                redirect_to trivium_path(@trivia.id+1)
+                flash[:error] = "wrong answer!"
+            end
+            if current_user.score < 0
+              flash[:error] = "Game over"
+              current_user.update(score: current_user.score=0)
+              redirect_to root_path
+            end
       end
-    end
-    if current_user.score < 0
-      flash[:error] = "Game over"
-      redirect_to trivium_path(@trivia)
-      current_user.update(score: current_user.score=0)
-    end
   end
 
   def new
