@@ -3,14 +3,17 @@
     padding:50px 0;
     padding-left: 15px;
     color:#f0f9ff;
-    background-color:#282d32;
+    background-color: black;
   }
   
-  .footer-dark h4 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:lighter;
-    font-size:20px;
+  .logo {
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo:hover {
+    color: white;
+    text-decoration: none;
   }
   
   .footer-dark ul {
@@ -18,7 +21,7 @@
     list-style:none;
     line-height:1.6;
     font-size:20px;
-    font-weight: lighter;
+    font-weight: 400;
     margin-bottom:k0;
   }
   

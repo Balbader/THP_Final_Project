@@ -1,4 +1,27 @@
 /* ====================================================== Navbar ============== */
 .navbar {
   font-weight: lighter;
+  font-weight: 400;
+  background-color: black;
+  padding-right: 10px;
+  margin-right: 5px;
 }
+
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.site_title {
+  font-size: 50px;
+  font-weight:700;
+}
+
+.price {
+  margin-right: 30px;
+}
+
+.nav-link {
+  margin-right: 10px;
+}
+
