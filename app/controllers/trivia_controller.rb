@@ -1,5 +1,8 @@
 class TriviaController < ApplicationController
   before_action :authenticate_user!
+
+  helper_method :timer
+
   def index
     @user = User.all
     if current_user
@@ -35,6 +38,16 @@ class TriviaController < ApplicationController
       current_user.update(score: current_user.score=0)
     end
   end
+
+  def timer
+    num_seconds = 5
+    start_time = Time.now.to_i
+    current_time = Time.now.to_i
+      while current_time < start_time + num_seconds
+        current_time = Time.now.to_i
+      end
+      flash[:error] = "TIME UP"
+  end 
 
   def new
     @trivium = Trivium.new
