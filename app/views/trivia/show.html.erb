@@ -1,3 +1,20 @@
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.countdown.css"> 
+<script type="text/javascript" src="javascripts/jquery.plugin.js"></script> 
+<script type="text/javascript" src="javascripts/jquery.countdown.js"></script> </head>
+
+<div data-countdown="2016/01/01"></div>
+
+<script type="text/javascript">
+  $('[data-countdown]').each(function() {
+   var $this = $(this), finalDate = $(this).data('countdown');
+   $this.countdown(finalDate, function(event) {
+     $this.html(event.strftime('%D days %H:%M:%S'));
+   });
+ });
+</script>
+
 <div class="center jumbotron">
   <%= render 'question' %>
   <% flash.each do |key, value| %>
