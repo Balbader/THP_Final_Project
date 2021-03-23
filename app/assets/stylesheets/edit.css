@@ -75,3 +75,11 @@ body{
     color: #fff;
     text-decoration: none;
   }
+
+.cancel {
+    width: 100%;
+}
+
+.user_info {
+    height: 290px;
+}
