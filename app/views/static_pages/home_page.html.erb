@@ -2,25 +2,25 @@
 <%= stylesheet_link_tag "home_page" %>
 
 
-<header class="masthead text-center text-white">
+<header class=" masthead text-center text-white" id="top_header">
     <div class="masthead-content">
       <div class="container">
         <h1 class="masthead-heading ">Ludee</h1>
-        <h2 class="">The Crowdfunding Quiz Game to help students pay off their student loan
+      </div>
+      <div>
+        <h2 class="container just_know mt-3">The Crowdfunding Quiz Game to help students pay off their student loan
         and earn some cash on the side.</h2>
-        <a href="/users/sign_up" class="btn btn-primary btn-xl rounded-pill mt-5">Start Playing Now</a>
+      </div>
+      <div>
+        <a href="/users/sign_up" class=" edit mt-3">Start Playing Now</a>
       </div>
     </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
   </header>
   <body>
   <section class="how_it_works pt-5" id="how_it_works">
       <div class="section-block-grey">
         <div class="container-fluid">
-        <h2 class="">How It Works</h2>
+        <h2 id="how_much">How It Works</h2>
       </div>
   </div>
 </div>
@@ -90,15 +90,80 @@
 	</div>
 </section>
 
-
-    <section class="how_it_works" id="price">
-      <div class="section-block-white">
-        <div class="container-fluid">
-        <h2 class="pt-5">How Much?</h2>
-        <p>Just so you know, 90% of the generated income on Ludee goes directly to our users, while 10% is used to operate the Ludee platform, less banking and process charges.</p>
-      </div>
-  </div>
+<section class="rules pt-5 pb-0">
+<div class="container">
+<div class="page-header">
+    <h1 id="timeline">The Rules</h1>
 </div>
+<ul class="timeline">
+    <li>
+      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">I</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">II</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">III</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">IV</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">V</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+        </div>
+      </div>
+    </li>
+</ul>
+</div>
+</section>
+
+
+<section class="how_it_works" id="price">
+  <div class="section-block-white">
+      <div class="container-fluid">
+        <h2 class="pt-5 pb-5" id="how_much">How Much?</h2>
+      </div>
+      <div class="container just_know">
+        <p class="about_description">Just so you know, 90% of the generated income on Ludee goes directly to our users, while 10% is used to operate the Ludee platform, less banking and process charges.</p>
+      </div>
+   </div>
 </section>
 
 
@@ -152,11 +217,11 @@
   <section class=" text-center section-block-grey" id="sec_1">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h5 class="about_description">We believe in building a future where students are not prisoners to student loans, but active participants in a society, free from debt.
+          <p class="about_description">We believe in building a future where students are not prisoners to student loans, but active participants in a society, free from debt.
           <br>This place is yours.
           <br>Welcome.
-          </h5>
-          <a href="/users/sign_up" class="btn btn-primary btn-xl rounded-pill mt-5">Start Playing Now</a>
+          </p>
+          <a href="/users/sign_up" class="edit mt-5">Start Playing Now</a>
         </div>
       </div>
       </section>
