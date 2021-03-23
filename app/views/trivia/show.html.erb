@@ -9,6 +9,7 @@
       <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
                                           :answer) %></h3>
       <%= f.submit "Submit Answer", class: "btn btn-lg btn-info btn-block" %>
+      <%= link_to "Back to Dashboard",trivia_path, class: "btn btn-lg btn-danger" %>
     <% end %><br>
   </div>
 </section>
