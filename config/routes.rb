@@ -15,11 +15,11 @@ Rails.application.routes.draw do
   scope '/trivia' do
     post ':id', to: 'trivia#trivia_answer', as: 'trivia_answer'
   end
-  
+
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   # Stripe routes
   resources :orders, only: [:create, :index]
-  
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
