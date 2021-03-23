@@ -11,6 +11,9 @@
     color: #FFFFFF;
     margin-bottom: 15px;
 }
+label:hover{
+    color: #6d2f88;
+}
 
 body, html{
     height: 100%;
