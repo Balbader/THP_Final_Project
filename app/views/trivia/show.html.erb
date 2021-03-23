@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+label
+{
+    font-size: 50px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+btn  btn-lg {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+</style>
+</head>
+
 <section class="masthead py-8">
   <div  class="container card text-white bg-dark py-8 px-5">
     <%= render 'question' %>
@@ -7,9 +29,15 @@
       <hr>
     <%= form_for @answer, url: trivia_answer_path do | f | %>
       <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
-                                          :answer) %></h3>
-      <%= f.submit "Submit Answer", class: "btn btn-lg btn-info btn-block" %>
-      <%= link_to "Back to Dashboard",trivia_path, class: "btn btn-lg btn-danger" %>
+                                          :answer, html_options: { class: 'form-control' }) do |b| %>
+    <%= b.label { b.radio_button + " " + b.text } %><br>
+<% end %>
+
+
+                                          
+                                          </h3>                               
+      <%= f.submit "Submit Answer", class: "btn btn-lg" %>
+      <%= link_to "Back to Dashboard",trivia_path, class: "btn btn-lg" %>
     <% end %><br>
   </div>
 </section>
