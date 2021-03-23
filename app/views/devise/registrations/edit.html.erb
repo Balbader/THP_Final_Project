@@ -37,6 +37,7 @@
                   </div>
 
                   <hr>
+
                         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
                           <%= render "devise/shared/error_messages", resource: resource %>
                             <div class="field">
@@ -47,71 +48,31 @@
                             <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
                           <% end %>
 
-                          <div class="field">
-                            <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+                          <div class="field pt-5">
+                            <%= f.label :password %><br>
                             <%= f.password_field :password, autocomplete: "new-password" %>
                             <% if @minimum_password_length %>
                               <br />
                               <em><%= @minimum_password_length %> characters minimum</em>
+                              <i><br>(leave blank if you don't want to change it)</i><br />
                             <% end %>
                           </div>
 
-                          <div class="field">
+                          <div class="field pt-5">
                             <%= f.label :password_confirmation %><br />
                             <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
                           </div>
 
-                          <div class="field">
-                            <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-                            <%= f.password_field :current_password, autocomplete: "current-password" %>
+                          <div class="field pt-5">
+                            <%= f.label :current_password %><br />
+                            <%= f.password_field :current_password, autocomplete: "current-password" %> <br>
+                            <i>(we need your current password to confirm your changes)</i><br />
                           </div>
 
-                          <div class="actions">
-                            <%= f.submit "Update" %>
+                          <div class="actions pt-5">
+                            <%= f.submit "Update", class:"edit btn" %>
                           </div>
                         <% end %>
-                    
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Email</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    <%= current_user.email %>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Password</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    <%= current_user.email %>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Confirm Password</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    <%= current_user.email %>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Current Password</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    <%= current_user.email %>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div class="card">
