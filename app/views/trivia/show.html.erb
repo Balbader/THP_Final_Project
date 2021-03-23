@@ -12,12 +12,16 @@
     <%= form_for @answer, url: trivia_answer_path do | f | %>
       <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
                                           :answer, html_options: { class: 'form-control' }) do |b| %>
-        <%= b.label { b.radio_button + " " + b.text } %><br>
+        <%= b.label { b.radio_button + " " + b.text } %><br />
         <% end %>
-      </h3>                               
-      <%= f.submit "Submit Answer", class: "btn btn-lg" %>
-      <%= link_to "Back to Dashboard",trivia_path, class: "btn btn-lg" %>
-    <% end %><br>
+      </h3>        
+      <br />                     
+    <%= f.submit "Submit Answer", class: "btn btn-lg" %>
+    <br /><br>
+    <%= link_to "Back to Dashboard",trivia_path, class: "btn-back btn btn-lg" %>
+    <% end %>
+   
+   <br>
 
     <!-- Display the countdown timer in an element lets try-->
 <progress value="0" max="10" id="progressBar"></progress>
