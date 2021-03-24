@@ -41,6 +41,9 @@ label:hover{
     -webkit-text-fill-color: transparent;
 }
 /* color of progres bar */
+progress:not([value]){
+    appearance: none;
+}
 progress[value]{
     -webkit-appearance: none;
     appearance: none;
