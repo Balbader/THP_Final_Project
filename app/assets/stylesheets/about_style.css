@@ -1,11 +1,21 @@
+body {
+    padding-top: 100px;
+    background-color: #100F10;
+}
+
 #team {
-    background: #eee !important;
+    background-color: #100F10;
+    color: white;
 }
 
 #sec_1 {
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+#name {
+    color: white;
 }
 
 .about_description {
@@ -25,7 +35,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #000000;
+    color: white;
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 100px;
@@ -33,7 +43,7 @@ section .section-title {
 
 #team .card {
     border: none;
-    background: #ffffff;
+    background: #1b1b1b;
 }
 
 .image-flip:hover .backside,
@@ -79,15 +89,11 @@ section .section-title {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
 }
 
 .frontside,

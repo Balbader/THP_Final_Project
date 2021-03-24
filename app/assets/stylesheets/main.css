@@ -1,7 +1,5 @@
-.py-8{
-    padding: 8rem;
-}
-
-.pb-8{
-    padding-bottom: 8rem;
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }

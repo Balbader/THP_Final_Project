@@ -1,142 +1,221 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<%= stylesheet_link_tag "how_section" %>
+<%= stylesheet_link_tag "home_page" %>
 
 
-<header class="masthead text-center text-white">
+<header class=" masthead text-center text-white" id="top_header">
     <div class="masthead-content">
       <div class="container">
-        <h1 class="masthead-heading mb-0">Ludee</h1>
-        <h2 class="">The Crowdfunding Quiz Game to help students pay off their student loan
+        <h1 class="masthead-heading ">Ludee</h1>
+      </div>
+      <div>
+        <h2 class="container just_know mt-3">The Crowdfunding Quiz Game to help students pay off their student loan
         and earn some cash on the side.</h2>
-        <a href="/users/sign_up" class="btn btn-primary btn-xl rounded-pill mt-5">Start Playing Now</a>
+      </div>
+      <div class="container just_know col-lg-6 col-md-8 mx-auto">
+        <a href="/users/sign_up" class=" edit mt-3">Start Playing Now</a>
       </div>
     </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
   </header>
   <body>
-    <section class="how_it_works">
-    <div class="section-block-grey">
-    <div class="container">
-      <div class="container">
-        <h2 class="">How It Works</h2>
-        <h4>Ludee.org is a non-profit organization created with the sole purpose of helping students pay off
-        their student loans while playing a fun quizz game and win weekly awards.</h4>
-      </div>
-      <div class="row mt-10">
-          <div class="col-md-4 col-sm-12 col-12">
-              <div class="serv-section-2">
-                  <div class="serv-section-2-icon"> <i class="fas fa-lightbulb"></i> </div>
-                  <div class="serv-section-desc">
-                      <h4>Sign Up</h4>
-                      <h5>And Start Playing Trivia</h5>
-                  </div>
-                  <div class="section-heading-line-left"></div>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-12">
-              <div class="serv-section-2 serv-section-2-act">
-                  <div class="serv-section-2-icon serv-section-2-icon-act"> <i class="fas fa-award"></i> </div>
-                  <div class="serv-section-desc">
-                      <h4>Play</h4>
-                      <h5>And Win Weekly Awards</h5> </div>
-                  <div class="section-heading-line-left"></div>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-12">
-              <div class="serv-section-2">
-                  <div class="serv-section-2-icon"> <i class="fas fa-credit-card"></i> </div>
-                  <div class="serv-section-desc">
-                      <h4>Loan</h4>
-                      <h5>Get Your Student Loan<br> Paid Off</h5> </div>
-                  <div class="section-heading-line-left"></div>
-              </div>
-          </div>
-      </div>
+  <section class="how_it_works pt-5" id="how_it_works">
+      <div class="section-block-grey">
+        <div class="container-fluid">
+        <h2 id="how_much">How It Works</h2>
+        <div class="container pt-5">
+	<div class="row">
+
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+
+	<div class="team-front">
+	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823536420706320404/startup.png" class="img-fluid" />
+	<h3>Sign Up</h3>
+	<p id="p_sec">and set up your profile</p>
+	</div>
+
+	<div class="team-back">
+	<span>
+	Sign up and start playing Trivia to win weekly awards and raise funds to pay off your student loan.
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<!--team-1-->
+
+	<!--team-2-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+
+	<div class="team-front">
+	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823538596145004615/idea.png" class="img-fluid" />
+	<h3>Play Trivia</h3>
+	<p id="p_sec">and earn weekly prizes</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	The highest players score takes home the weekly trivia award. Trivia has never been this easy.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-2-->
+	
+	<!--team-3-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823544805069815828/document.png" class="img-fluid" />
+	<h3>Crowdfund</h3>
+	<p id="p_sec">Crowdfund Student Loans</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	While playing trivia, crowdfund student loan and pay off yours.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-3-->
+	</div>
+	</div>
       </div>
   </div>
 </div>
-    </section>
-    <section class="how_it_works">
-      <div class="section-block-white">
+</section>
+
+<section class="rules pt-5 pb-5">
+<div class="container">
+<div class="page-header">
+    <h1 id="timeline">The Rules</h1>
+</div>
+<ul class="timeline">
+    <li>
+      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">I</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Playing on Ludee helps crowdfund our loan wallet. Anyone can play. In fact, the more, the merrier. You can start a game at any time.<br>You can play as much as you wish.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">II</h4>
+        </div>
+        <div class="timeline-body">
+          <p>You independently answer general-purpose questions. Only correct answers will be accounted for. You will get bonus points if you surpass your previous session score.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">III</h4>
+        </div>
+        <div class="timeline-body">
+          <p>A Game Session lasts 1 week.<br>A session starts every Thursday at 3pm CEST and ends every Wednesday at 3pm CEST.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">IV</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Every Friday, we will anounce the winners of the previous week game session.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title" id="timeline">V</h4>
+        </div>
+        <div class="timeline-body">
+          <p>As long as there are questions available, you can play as many times as you like to strive for higher scores. However, you can only play on one account. If you play on more than one account, we reserve the right to ban you from Ludee.</p>
+        </div>
+      </div>
+    </li>
+</ul>
+</div>
+</section>
+
+
+<section class="how_it_works" id="price">
+  <div class="section-block-white">
+      <div class="container-fluid">
+        <h2 class="pt-5" id="how_much">How Much?</h2>
+        <p class=" container just_know about_description pb-3" id="p-info">Just so you know, 90% of the generated income on Ludee goes directly to our users, while 10% is used to operate the Ludee platform, less banking and process charges.</p>
         <div class="container">
-          <div class="container">
-        <h2 class="">How Much?</h2>
-        <h4>Just so you know, 90% of the generated income on Ludee goes directly to our users, while 10% is used to operate the Ludee platform, less banking and process charges.</h4>
-      </div>
-
-      </div>
-  </div>
-</div>
-    </section>
-    <section class="section">
-    <div class="container">
-
-      <div class="section_header">
+      <div class="section_header ">
         <div class="row">
       <div class="section_content teamy-team">
-      <div class="col-md-3">
-        <div class="teamy teamy_style1 teamy_mask-circle">
-          <div class="teamy_layout">
-            <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/822541104317988884/money.png" class="teamy_avatar" alt="The demo photo"> </div>
-            <div class="teamy_back">
-              <div class="pricing"><h2>10€/Month</h2></div>
+        <div class="working col-md-3">
+          <div class="teamy teamy_style1 teamy_mask-circle">
+            <div class="teamy_layout">
+              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823516787102449664/income.png" class="teamy_avatar" alt="The demo photo"> </div>
             </div>
+            <div class="teamy_content">
+              <span class="teamy_post" id="tito">10€/Month is what it takes to make the magic happen</span> </div>
           </div>
-          <div class="teamy_content">
-            <span class="teamy_post">10€/Month is what it takes to make the magic happen</span> </div>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="teamy teamy_style1 teamy_mask-circle">
-          <div class="teamy_layout">
-            <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/822541103446097950/money-back-guarantee.png" class="teamy_avatar" alt="The demo photo"> </div>
-            <div class="teamy_back">
-              <div class="pricing"><h2>50% student loan</h2></div>
+          </div>
+          <div class="working col-md-3">
+          <div class="teamy teamy_style1 teamy_mask-circle">
+            <div class="teamy_layout">
+              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823518250280681492/student.png" class="teamy_avatar" alt="The demo photo"> </div>
             </div>
+            <div class="teamy_content">
+              <span class="teamy_post" id="tito">50% goes to pay off student loans</span> </div>
           </div>
-          <div class="teamy_content">
-            <span class="teamy_post">50% goes to pay off student loans</span> </div>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="teamy teamy_style1 teamy_mask-circle">
-          <div class="teamy_layout">
-            <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/822541102132363341/debt.png" class="teamy_avatar" alt="The demo photo"> </div>
-            <div class="teamy_back">
-              <div class="pricing"><h2>40% weekly prizes</h2></div>
+          </div>
+          <div class="working col-md-3">
+          <div class="teamy teamy_style1 teamy_mask-circle">
+            <div class="teamy_layout">
+              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823517411105832980/trophy.png" class="teamy_avatar" alt="The demo photo"> </div>
             </div>
+            <div class="teamy_content">
+              <span class="teamy_post" id="tito">40% is redistributed to our students as weekly prizes</span> </div>
           </div>
-          <div class="teamy_content">
-            <span class="teamy_post">40% is redistributed to our students as weekly prizes</span> </div>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="teamy teamy_style1 teamy_mask-circle">
-          <div class="teamy_layout">
-            <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/822541100455428106/debit-card.png" class="teamy_avatar" alt="The demo photo"> </div>
-            <div class="teamy_back">
-              <div class="pricing"><h2>10% <br>FEES</h2></div>
+          </div>
+          <div class="working col-md-3">
+          <div class="teamy teamy_style1 teamy_mask-circle">
+            <div class="teamy_layout">
+              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823518690812231690/credit-card.png" class="teamy_avatar" alt="The demo photo"> </div>
             </div>
+            <div class="teamy_content">
+              <span class="teamy_post" id="tito">1€/Month goes towards general processing fees</span> </div>
           </div>
-          <div class="teamy_content">
-            <span class="teamy_post">1€/month goes towards general processing fees</span> </div>
+          </div>
         </div>
-        </div>
+    </div>
+    </div>
       </div>
-    </div>
-    </div>
-  </section>
-  <section class="py-5 text-center section-block-grey" id="sec_1">
+  </div>
+</section>
+
+
+  <section class=" text-center section-block-grey" id="sec_1">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h5 class="about_description">We believe in building a future where students are not prisoners to student loans, but active participants in a society, free from debt.
+          <p class="about_description">We believe in building a future where students are not prisoners to student loans, but active participants in a society, free from debt.
           <br>This place is yours.
           <br>Welcome.
-          </h5>
-          <a href="/users/sign_up" class="btn btn-primary btn-xl rounded-pill mt-5">Start Playing Now</a>
+          </p>
+          <a href="/users/sign_up" class="edit mt-5">Start Playing Now</a>
         </div>
       </div>
       </section>
