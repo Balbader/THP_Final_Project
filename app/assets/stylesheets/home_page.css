@@ -1,5 +1,5 @@
 body {
-    background-color: #100F10;
+    background-color:  #100F10;
 }
 
 #top_header {
@@ -19,6 +19,14 @@ body {
     width: 70%;
     display: flex;
     justify-content: center;
+}
+
+#p-info {
+  font-size: 20px;
+}
+
+#p_sec {
+  font-size: 20px;
 }
 
 .section-block-grey {
@@ -329,7 +337,6 @@ body {
     padding-bottom: 3rem;
    }
    .section_header {
-    margin-bottom: 1rem;
     background-color:#1B1B1B;
    }
    .section_content {
@@ -342,9 +349,7 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
    }
-   .section_header {
-    margin-bottom: 3rem;
-   }
+  
    }
 
    .about_description {
@@ -443,20 +448,20 @@ body {
 /*=================== Play Now Button ==================== */
 
 .edit {
-    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 20px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 50px;
-    border-color: #1B1B1B;
-    display: flex;
-    justify-content: center;
+  background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 50px;
+  border-color: #1B1B1B;
+  display: flex;
+  justify-content: center;
   }
  
   .edit:hover {
