@@ -89,19 +89,27 @@ body{
 
 .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
-  }
-  
+}
+
   .btn-update {
     background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
-    width: 20%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 10px 45px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 60px;
+    padding-top: 10px;
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
+    border-radius: 5px;
     border-color: #1B1B1B;
     display: flex;
     justify-content: center;
+    }
+
+    .btn-update:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
     }

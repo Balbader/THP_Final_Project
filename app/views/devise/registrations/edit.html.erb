@@ -1,84 +1,72 @@
 
 <%= stylesheet_link_tag "edit" %>
 
-
 <div class="container pt-5 pb-5">
-    <div class="main-body">
-          <div class="row gutters-sm">
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex flex-column align-items-center text-center">
-                            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-                               <%= render "devise/shared/error_messages", resource: resource %>
-                              <div>
-                              <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"150" unless current_user.avatar.attached? %>
-                              <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
-                              </div>
-                              <label class="btn-update"> 
-                               <i class="fa"></i> Update your picture <%= f.file_field :avatar, class: "custom-file-input btn" %>  
-                                  </label>                                  
-                                  </div>
-                </div>
+  <div class="main-body">
+    <div class="row gutters-sm">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+              <div>
+                <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"150" unless current_user.avatar.attached? %>
+                <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
               </div>
-
-              <div class="card mt-3">
-                <ul class="list-group list-group-flush">
-                </ul>
-                </div>
+              <div class="">
+                <button class="btn-update mt-4">Update<%= f.file_field :avatar, class: "custom-file-input" %> </button>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-8">
-              <div class="card mb-3">
-                <div class="card-body">
-                        
+        <div class="card mt-3">
+          <ul class="list-group list-group-flush"></ul>
+        </div>
+      </div>
 
-                          <div class="user_info container text-center align-items-center">
-                          <div class="field pt-3">
-                          <%= f.text_field :first_name, placeholder: "First Name", autofocus: true, autocomplete: "first_name" %>
-                        </div>
-                        <div class="field pt-3">
-                          <%= f.text_field :last_name, placeholder: "Last Name", autofocus: true, autocomplete: "last_name" %>
-                        </div>
-                        <div class="field pt-3">
-                          <%= f.text_field :age, placeholder: "Age", autofocus: true, autocomplete: "age" %>
-                        </div>
-                          <div class="field pt-3">
-                            <%= f.password_field :current_password, placeholder: "Enter Password",  class:" phone box-mdp mb-4" %>
-                          </div> 
-                          <div class="actions">
-                          <%= f.submit "Update Info", class:"edit btn" %>
-                        </div>
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="user_info container text-center align-items-center">
 
-                          <% end %>
-                        </div>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="card cancel">
-                          <div class="card-body">
-                            <div class="d-flex flex-column align-items-center text-center">
-                              <div class="mt-3">
-                                <h4>Cancel Account</h4>
-                                <p>Sad To See You Leave</p>
-                                <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"edit btn" %></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="field pt-3">
+                <%= f.text_field :first_name, placeholder: "First Name", autofocus: true, autocomplete: "first_name" %>
               </div>
 
-                        
-                          
-                          
+              <div class="field pt-3">
+                <%= f.text_field :last_name, placeholder: "Last Name", autofocus: true, autocomplete: "last_name" %>
+              </div>
 
-                <div class="card-body">
-                  <div class="d-flex flex-column align-items-center text-center">
-                    
-                     
-                  </div>
+              <div class="field pt-3">
+                <%= f.text_field :age, placeholder: "Age", autofocus: true, autocomplete: "age" %>
+              </div>
+
+              <div class="field pt-3">
+                <%= f.password_field :current_password, placeholder: "Enter Password",  class:" phone box-mdp mb-4" %>
+              </div>
+
+              <div class="actions">
+                <%= f.submit "Update Info", class:"edit btn" %>
+              </div>
+
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cancel">
+        <div class="card-body">
+          <div class="d-flex flex-column align-items-center text-center">
+            <div class="mt-3">
+              <h4>Cancel Account</h4>
+              <p>Sad To See You Leave</p>
+              <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"edit btn" %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
