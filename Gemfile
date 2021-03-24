@@ -11,6 +11,7 @@ gem 'dotenv-rails'
 gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap'
+gem 'activestorage'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
