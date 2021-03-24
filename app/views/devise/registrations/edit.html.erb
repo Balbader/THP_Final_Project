@@ -15,8 +15,8 @@
                               <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"150" unless current_user.avatar.attached? %>
                               <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
                               </div>
-                              <div class="btn d-flex flex-column align-items-center text-center">  
-                                <%= f.file_field :avatar, class: "custom-file-input btn" %>   
+                              <div class="edit btn">  <span>Update 
+                                <%= f.file_field :avatar, class: "custom-file-input btn" %>   </span>
                                    </div>
                                                    
                         
