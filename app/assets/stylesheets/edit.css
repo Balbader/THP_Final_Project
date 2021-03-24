@@ -84,42 +84,24 @@ body{
     height: 290px;
 }
 
+/*=================== Hide Button ==================== */
+
+
 .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   }
-  .custom-file-input::before {
-    content: 'Select some files';
-    display: inline-block;
-    background: linear-gradient(top, #f9f9f9, #e3e3e3);
-    border: 1px solid #999;
-    border-radius: 3px;
-    padding: 5px 8px;
-    outline: none;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    cursor: pointer;
-    text-shadow: 1px 1px #fff;
-    font-weight: 700;
-    font-size: 10pt;
-  }
-  .custom-file-input:hover::before {
-    border-color: black;
-  }
-  .custom-file-input:active::before {
-    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-  }
   
-  .btn {
-      background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
-      width: 40%;
-      margin-left: 15%;
-      margin-right: 15%;
-      padding: 10px 45px;
-      text-align: center;
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;
-      border-color: #1B1B1B;
-      display: flex;
-      justify-content: center;
+  .btn-update {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+    width: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-color: #1B1B1B;
+    display: flex;
+    justify-content: center;
     }
