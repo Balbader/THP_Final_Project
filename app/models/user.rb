@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :trivia_users
          has_many :trivia, through: :trivia_users
+         has_one_attached :avatar
 
          after_create :welcome_send
 
