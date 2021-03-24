@@ -1,6 +1,7 @@
 
 <%= stylesheet_link_tag "edit" %>
 
+
 <div class="container pt-5 pb-5">
     <div class="main-body">
           <div class="row gutters-sm">
@@ -14,9 +15,9 @@
                               <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"150" unless current_user.avatar.attached? %>
                               <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
                               </div>
-                              <div> (Upload your new profile picture below!)                               
-                                <%= f.file_field :avatar, class:"btn edit"%>
-                              </div>
+                              <div class="btn d-flex flex-column align-items-center text-center">  
+                                <%= f.file_field :avatar, class: "custom-file-input btn" %>   
+                                   </div>
                                                    
                         
                   </div>
