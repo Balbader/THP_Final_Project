@@ -15,9 +15,11 @@
                           <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
                         </div>
                         <hr>
-                        <div>                               
-                          <%= f.file_field :avatar, class:"btn edit"%>
-                        </div>       
+                        <div class="fileUpload btn edit">
+                            <span>Update phot</span>
+                            <input type="file" class="upload" <%= f.file_field :avatar, class:"btn edit"%>
+                        </div>
+                              
                   </div>
                 </div>
               </div>
