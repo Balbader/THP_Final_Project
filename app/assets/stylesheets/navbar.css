@@ -26,3 +26,10 @@
   margin-right: 10px;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 2%;
+  top: 2px;
+}
