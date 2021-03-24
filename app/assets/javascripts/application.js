@@ -3,3 +3,4 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap.bundle
+//= require trivia-show

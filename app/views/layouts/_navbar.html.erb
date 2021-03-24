@@ -17,9 +17,12 @@
               <li  class="nav-item">
                 <a class="nav-link" href ="/static_pages/secret">My profile</a>
               </li>
-
               <li  class="nav-item">
                 <a class="nav-link" href ="#">My score :<%= current_user.score%></a>
+              </li>
+              <li  class="nav-item">
+                 <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"50" unless current_user.avatar.attached? %>
+                 <%= image_tag current_user.avatar, class:"rounded-circle", width:"50" if current_user.avatar.attached? %>
               </li>
             <% else %>
               <li class="nav-item">    
