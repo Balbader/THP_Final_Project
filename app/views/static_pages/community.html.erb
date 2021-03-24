@@ -1,5 +1,6 @@
 <%= stylesheet_link_tag "uniform" %>
 <%= stylesheet_link_tag "home_page" %>
+<%= stylesheet_link_tag "contact" %>
 
 <header class="mastheads text-center text-white">
     <div class="masthead-content">
@@ -92,7 +93,7 @@
                     </div>
                     <!--team-3-->
 	    </div>
-        <div class=" text-white bg-black pb-8">
+        <div class=" text-white bg-black">
         <div>
             <div class="our-team-main">
                 <div class="team-front">
@@ -107,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class=" text-white bg-black pb-8">
+        <div class=" text-white bg-black pb-5">
         <div>
             <div class="our-team-main">
                 <div class="team-front">
@@ -122,6 +123,35 @@
                 </div>
             </div>
         </div>
+        <form>
+            <div class="radio">
+              <input id="value1" type="radio" name="radio1" />
+              <label for="value1" class="sex">&#xf182;</label>
+            </div>
+            <div class="radio">
+              <input id="value2" type="radio" name="radio1" />
+              <label for="value2" class="sex">&#xf183;</label>
+            </div>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Mail" />
+            <input type="text" placeholder="Phone" />
+            <div class="radio">
+              <input id="value3" type="radio" name="radio2" />
+              <label for="value3">Issue</label>
+            </div>
+            <div class="radio">
+              <input id="value4" type="radio" name="radio2" />
+              <label for="value4">Suggestion</label>
+            </div>
+            <div class="radio">
+              <input id="value5" type="radio" name="radio2" />
+              <label for="value5">Complaint</label>
+            </div>
+            <textarea placeholder="Your Message"></textarea>
+            <div class="container just_know col-lg-6 col-md-8">
+            <a href="/community" class=" edit mt-3">Send</a>
+            </div>
+        </form>
     </div>
 	</div>
 </section>
