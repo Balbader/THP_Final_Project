@@ -622,3 +622,14 @@ body {
   .timeline-body > p + p {
     margin-top: 5px;
   }
+
+  .working {
+    background-color:rgba(50, 50, 50, 0.16);
+    height: 250px;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+
+  #tito {
+    font-size: 15px;
+  }
