@@ -1,7 +1,14 @@
-<div class="container text-center pt-5 mt-5">
-  <h1>Payment confirmed</h1>
-  <p>Thank you for your support for the students. :) </p>
-  <div class="btn-secondary">
-    <%= link_to "Back to Home", root_path, class: "btn-stripe btn btn-block" %>
-  </div>
-</div>
+<%= stylesheet_link_tag "confirmpayment" %>
+<section class="main_section  text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light pt-5 pb-3">Payment Confirmed</h1>
+        <p class="lead text-muted pb-3">
+        Your payment has been processed.<br>Thank you and welcome to the Ludee Family :)<br>
+        </p>
+        <div class="container-fluid" id="stripe">
+            <%= link_to 'Dashboard', root_path, class: "btn-stripe "%>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -12,6 +12,16 @@ body{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
+.main_section {
+    padding-bottom: 100px;
+    color: white;
+    background-color: #1B1B1B;
+}
+
+h1 {
+    font-size: 60px;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -57,14 +67,16 @@ body{
 
 .edit {
     background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 10px 45px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 45px;
     text-align: center;
+    text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
+    border-radius: 50px;
     border-color: #1B1B1B;
     display: flex;
     justify-content: center;
