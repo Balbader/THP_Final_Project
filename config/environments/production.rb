@@ -2,7 +2,10 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.action_mailer.delivery_method = :mailjet
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer..default_url_options = {:host => 'https://ludee-org.herokuapp.com/'}
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -68,7 +71,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   
-  config.action_mailer.delivery_method = :mailjet_api
+  
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
