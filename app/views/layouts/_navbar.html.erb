@@ -24,23 +24,23 @@
                  <%= image_tag current_user.avatar, class:"rounded-circle", width:"50" if current_user.avatar.attached? %>
               </li>
             <% else %>
-              <li class="nav-item">    
+              <li class="nav-item">
                 <%= link_to "Home", root_path, class: "nav-link" %>
               </li>
-              <li class="nav-item">    
-                <a class="nav-link" href ="#how_it_works">How It Works</a>
+              <li class="nav-item">
+                <%= link_to "How It Works ", root_path(anchor: 'how_it_works'), class: "nav-link" %>
               </li>
-              <li class="nav-item price">    
-                <a class="nav-link" href ="#price">Price</a>
+              <li class="nav-item price">
+                <%= link_to "Price ", root_path(anchor: 'price'), class: "nav-link" %>
               </li>
-              <li class="nav-item">    
+              <li class="nav-item">
                 <%= link_to "Sign in", user_session_path, class: "nav-link" %>
               </li>
               <li class="nav-item">
                 <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
               </li>
 
-            <% end %> 
+            <% end %>
         </ul>
       </div>
     </div>
