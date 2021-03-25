@@ -23,9 +23,8 @@
                   <div class="card">
                     <div class="card-body text-center">
                       <p><%= image_tag "avatar_trivia.png", class: "img-fluid mt-3", alt: "avatar" %></p>
-                      <h3 class="card-title text-white">Jean Delatour</h3>
-                      <h4 class="card-text text-white">Loan Total: 19.000$</h4>
-                      <h4 class="card-text text-white">Paid: 9.000$</h4>
+                      <h3 class="card-title text-muted">Tobey Maguire</h3>
+                      <h4 class="card-text" style="color:MediumOrchid;">Loan Total: 15.000$</h4>
                       <h4 class="card-text text-white">Left: 10.000$</h4>
                     </div>
                   </div>
@@ -33,13 +32,66 @@
                 <div class="backside">
                   <div class="card">
                     <div class="card-body text-center px-8">
-                      <h4 class="card-title text-muted p-3">Loan Status</h4>
-                      <h5 class="card-text text-white">On Going</h5>
+                      <h4 class="card-title text-muted pt-3">Loan Status</h4>
+                      <h1 class="card-text" style="color:limeGreen;">On Going</h1>
+                      <h4 class="card-text text-info">Paid: 9.000$</h4>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="image-flip" >
+                <div class="mainflip flip-0">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p><%= image_tag "avatar_trivia.png", class: "img-fluid mt-3", alt: "avatar" %></p>
+                        <h3 class="card-title text-muted">Tom Holland</h3>
+                        <h4 class="card-text" style="color:MediumOrchid;">Loan Total: 13.000$</h4>
+                        <h4 class="card-text text-white">Left: 10.000$</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="backside">
+                    <div class="card">
+                      <div class="card-body text-center px-8">
+                      <h4 class="card-title text-muted pt-3">Loan Status</h4>
+                      <h1 class="card-text" style="color:limeGreen;">On Going</h1>
+                      <h4 class="card-text text-info">Paid: 3.000$</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="image-flip" >
+                <div class="mainflip flip-0">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p><%= image_tag "avatar_trivia.png", class: "img-fluid mt-3", alt: "avatar" %></p>
+                        <h3 class="card-title text-muted">Andrew Garfield</h3>
+                        <h4 class="card-text" style="color:MediumOrchid;">Loan Total: 9.000$</h4>
+                        <h4 class="card-text text-white">Left: 9.000$</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="backside">
+                    <div class="card">
+                      <div class="card-body text-center px-8">
+                      <h4 class="card-title text-muted pt-3">Loan Status</h4>
+                      <h1 class="card-text" style="color:darkred;">On Hold</h1>
+                      <h4 class="card-text text-warning">Paid: 0.000$</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
           </div>
         </div>
       </div>
@@ -64,7 +116,7 @@
                  <%= image_tag "avatar3.jpeg", class:"img-fluid mt-3", width:"50" unless user.avatar.attached? %>
                  <%= image_tag user.avatar, class:"img-fluid mt-3", width:"50" if user.avatar.attached? %>
                </p>
-               <h4 class="card-title text-muted"><%= user.first_name if user.avatar.attached?%><%= user.id unless user.avatar.attached?%><%= user.last_name%></h4>
+               <h4 class="card-title text-muted"><%= user.first_name if user.avatar.attached?%><%= "Ludee Player" unless user.avatar.attached?%><%= user.last_name%></h4>
                 <p class="card-text text-white">Challenger score :<%= user.score%> </p>
             </div>
           </div>
