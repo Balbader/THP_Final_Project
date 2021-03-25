@@ -17,3 +17,8 @@ hr.one {
 hr.two {
     border-top: 1px dotted rgb(226, 200, 238);
   }
+
+.px-8{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
