@@ -25,4 +25,7 @@ class StaticPagesController < ApplicationController
 
   def privacy
   end
+
+  def loan_rules
+  end
 end
