@@ -12,7 +12,7 @@
         and earn some cash on the side.</h2>
       </div>
       <div class="container just_know col-lg-6 col-md-8 mx-auto">
-        <a href="/users/sign_up" class=" edit mt-3">Start Playing Now</a>
+        <%= link_to "Start Playing Now",  new_user_registration_path, class: "edit mt-3" %>
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@
 	<div class="our-team-main">
 
 	<div class="team-front">
-	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823536420706320404/startup.png" class="img-fluid" />
+  <%= image_tag "home/startup.png", class: "img-fluid", alt: "icon" %>
 	<h3>Sign Up</h3>
 	<p id="p_sec">and set up your profile</p>
 	</div>
@@ -49,7 +49,7 @@
 	<div class="our-team-main">
 
 	<div class="team-front">
-	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823538596145004615/idea.png" class="img-fluid" />
+  <%= image_tag "home/idea.png", class: "img-fluid", alt: "icon" %>
 	<h3>Play Trivia</h3>
 	<p id="p_sec">and earn weekly prizes</p>
 	</div>
@@ -69,7 +69,7 @@
 	<div class="our-team-main">
 	
 	<div class="team-front">
-	<img src="https://cdn.discordapp.com/attachments/822541048059920435/823544805069815828/document.png" class="img-fluid" />
+  <%= image_tag "home/document.png", class: "img-fluid", alt: "icon" %>
 	<h3>Crowdfund</h3>
 	<p id="p_sec">Crowdfund Student Loans</p>
 	</div>
@@ -167,7 +167,7 @@
         <div class="working col-md-3">
           <div class="teamy teamy_style1 teamy_mask-circle">
             <div class="teamy_layout">
-              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823516787102449664/income.png" class="teamy_avatar" alt="The demo photo"> </div>
+              <div class="teamy_preview"> <%= image_tag "home/income.png", class: "teamy_avatar", alt: "icon" %> </div>
             </div>
             <div class="teamy_content">
               <span class="teamy_post" id="tito">10€/Month is what it takes to make the magic happen</span> </div>
@@ -176,7 +176,7 @@
           <div class="working col-md-3">
           <div class="teamy teamy_style1 teamy_mask-circle">
             <div class="teamy_layout">
-              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823518250280681492/student.png" class="teamy_avatar" alt="The demo photo"> </div>
+              <div class="teamy_preview"><%= image_tag "home/student.png", class: "teamy_avatar", alt: "icon" %> </div>
             </div>
             <div class="teamy_content">
               <span class="teamy_post" id="tito">50% goes to pay off student loans</span> </div>
@@ -185,7 +185,7 @@
           <div class="working col-md-3">
           <div class="teamy teamy_style1 teamy_mask-circle">
             <div class="teamy_layout">
-              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823517411105832980/trophy.png" class="teamy_avatar" alt="The demo photo"> </div>
+              <div class="teamy_preview"> <%= image_tag "home/trophy.png", class: "teamy_avatar", alt: "icon" %> </div>
             </div>
             <div class="teamy_content">
               <span class="teamy_post" id="tito">40% is redistributed to our students as weekly prizes</span> </div>
@@ -194,7 +194,7 @@
           <div class="working col-md-3">
           <div class="teamy teamy_style1 teamy_mask-circle">
             <div class="teamy_layout">
-              <div class="teamy_preview"> <img src="https://cdn.discordapp.com/attachments/822541048059920435/823518690812231690/credit-card.png" class="teamy_avatar" alt="The demo photo"> </div>
+              <div class="teamy_preview"> <%= image_tag "home/credit-card.png", class: "teamy_avatar", alt: "icon" %> </div>
             </div>
             <div class="teamy_content">
               <span class="teamy_post" id="tito">1€/Month goes towards general processing fees</span> </div>
@@ -215,7 +215,7 @@
           <br>This place is yours.
           <br>Welcome.
           </p>
-          <a href="/users/sign_up" class="edit mt-5">Start Playing Now</a>
+          <%= link_to "Start Playing Now",  new_user_registration_path, class: "edit mt-3" %>
         </div>
       </div>
       </section>
