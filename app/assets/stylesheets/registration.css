@@ -1,0 +1,55 @@
+body{
+    margin-top:20px;
+    padding-top: 100px;
+    color: white;
+    background-color: #1B1B1B;
+}
+
+.background_box {
+    width: 50%;
+}
+
+#registration {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.main-body {
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+    background-color: #100F10;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+
+/*=================== Edit Button ==================== */
+
+.edit {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-color: #1B1B1B;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .edit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
