@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # Static Pages Scope
   scope '/', controller: :static_pages do
-    get :terms, :community, :privacy, :rules, :faq, :about_us, :stripe_button, :secret
+    get :terms, :community, :privacy, :rules, :faq, :about_us, :loan_rules, :stripe_button, :secret
   end
 
   resources :categories, only: [:show, :index]
