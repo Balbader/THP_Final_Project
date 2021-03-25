@@ -53,23 +53,23 @@ data = { results: [
     },
     {category: "General Knowledge",
       type: "boolean", 
-      question: "&quot;Number 16 Bus Shelter&quot; was a child&#039;s name that was approved by the New Zealand government.",
+      question: "Number 16 Bus Shelter was a childs name that was approved by the New Zealand government.",
       correct_answer: "True",
       incorrect_answers: ["False"]
     },
     {category: "General Knowledge",
       type: "multiple",
-      question: "What is the Swedish word for &quot;window&quot;?",
-      correct_answer: "F&ouml;nster",
+      question: "What is the Swedish word for window ?",
+      correct_answer: "F\önster",
       incorrect_answers: [
-        "H&aring;l",
-        "Sk&auml;rm",
+        "Marknadsf\öra",
+        "Sovrum",
         "Ruta"
       ]
     },
     {category: "General Knowledge",
       type: "multiple",
-      question: "The term &quot;scientist&quot; was coined in which year?",
+      question: "The term \"scientist\" was coined in which year?",
       correct_answer: "1833",
       incorrect_answers: [
         "1933",
@@ -82,7 +82,7 @@ data = { results: [
       question: "Which one of these Swedish companies was founded in 1943?",
       correct_answer: "IKEA",
       incorrect_answers: [
-      "H &amp; M",
+      "H \& M",
       "Lindex",
       "Clas Ohlson"
       ]
@@ -109,7 +109,7 @@ data = { results: [
     },
     {category: "General Knowledge",
       type: "multiple",
-      question: "What name represents the letter &quot;M&quot; in the NATO phonetic alphabet?",
+      question: "What name represents the letter \"M\" in the NATO phonetic alphabet?",
       correct_answer: "Mike",
       incorrect_answers: [
         "Matthew",
@@ -145,7 +145,7 @@ data = { results: [
     },
     {category: "General Knowledge",
       type: "boolean",
-      question: "The word &quot;news&quot; originates from the first letters of the 4 main directions on a compass (North, East, West, South).",
+      question: "The word \"news\" originates from the first letters of the 4 main directions on a compass (North, East, West, South).",
       correct_answer: "False",
       incorrect_answers: ["True"]
     },
@@ -161,12 +161,12 @@ data = { results: [
     },
     {category: "General Knowledge",
       type: "multiple",
-      question: "The term &quot;scientist&quot; was coined in which year?",
-      correct_answer: "1833",
+      question: "Grand Central Terminal, Park Avenue, New York is the world's",
+      correct_answer: "largest railway station",
       incorrect_answers: [
-        "1933",
-        "1942",
-        "1796"
+        "longest railway station",
+        "higest railway station",
+        "none of the list"
       ]
     },
     {category: "General Knowledge",
@@ -178,7 +178,7 @@ data = { results: [
     {category: "General Knowledge",
       type: "multiple",
       question: "What was the soft drink Pepsi originally introduced as?",
-      correct_answer: "Brad&#039;s Drink",
+      correct_answer: "Brad\'s Drink",
       incorrect_answers: [
         "Pepsin Pop",
         "Carolina Cola",
@@ -188,7 +188,7 @@ data = { results: [
     # 10. Entertainment: Books
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "Who wrote &quot;Harry Potter&quot;?",
+      question: "Who wrote \"Harry Potter\"?",
       correct_answer: "J.K. Rowling",
       incorrect_answers: [
         "J.R.R. Tolkien",
@@ -208,7 +208,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "boolean",
-      question: "The &quot;Berenstein Bears&quot; is the correct spelling of the educational children&#039;s book series&#039; name.",
+      question: "The \"Berenstein Bears\" is the correct spelling of the educational children\'s book series name.",
       correct_answer: "False",
       incorrect_answers: ["True"]
     },
@@ -230,23 +230,23 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "boolean",
-      question: "Stephen Chbosky wrote the book &#039;The Perks of Being A Wallflower&#039;.",
+      question: "Stephen Chbosky wrote the book \"The Perks of Being A Wallflower\".",
       correct_answer: "True",
       incorrect_answers: ["False"]
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "J.K. Rowling completed &quot;Harry Potter and the Deathly Hallows&quot; in which hotel in Edinburgh, Scotland?",
+      question: "J.K. Rowling completed \"Harry Potter and the Deathly Hallows\" in which hotel in Edinburgh, Scotland?",
       correct_answer: "The Balmoral",
       incorrect_answers: [
         "The Dunstane Hotel",
         "Hotel Novotel",
-        "Sheraton Grand Hotel &amp; Spa"
+        "Sheraton Grand Hotel \& Spa"
       ]
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "In the novel &quot;Lord of the Rings&quot;, how many rings of power were given to the race of man?",
+      question: "In the novel \"Lord of the Rings\", how many rings of power were given to the race of man?",
       correct_answer: "9",
       incorrect_answers: [
         "5",
@@ -256,7 +256,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "What is the make and model of the tour vehicles in &quot;Jurassic Park&quot;?",
+      question: "What is the make and model of the tour vehicles in \"Jurassic Park\"?",
       correct_answer: "1992 Toyota Land Cruiser",
       incorrect_answers: [
         "1992 Jeep Wrangler YJ Sahar",
@@ -266,7 +266,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "In Alice in Wonderland, what is the name of Alice&#039;s kitten?",
+      question: "In Alice in Wonderland, what is the name of Alice\'s kitten?",
       correct_answer: "Dinah",
       incorrect_answers: [
         "Oscar",
@@ -276,8 +276,8 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "Who wrote &quot;Harry Potter&quot;?",
-      correct_answer: "J.K. Rowling",
+      question: "Who wrote \"Game of Thrones\" ?",
+      correct_answer: "George R. R. Martin",
       incorrect_answers: [
         "J.R.R. Tolkien",
         "Terry Pratchett",
@@ -286,7 +286,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "Who wrote the &quot;A Song of Ice And Fire&quot; fantasy novel series?",
+      question: "Who wrote the \"A Song of Ice And Fire\" fantasy novel series?",
       correct_answer: "George R. R. Martin",
       incorrect_answers: [
         "George Lucas",
@@ -306,7 +306,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "The novel &quot;Of Mice And Men&quot; was written by what author? ",
+      question: "The novel \"Of Mice And Men\" was written by what author? ",
       correct_answer: "John Steinbeck ",
       incorrect_answers: [
         "George Orwell",
@@ -317,7 +317,7 @@ data = { results: [
     {category: "Entertainment: Books",
       type: "multiple",
       question: "In the year 1818, novelist Mary Shelly is credited with writing a fiction novel and creating this infamous character.",
-      correct_answer: "Frankenstein&#039;s monster",
+      correct_answer: "Frankenstein\'s monster",
       incorrect_answers: [
         "Dracula",
         "The Thing",
@@ -336,7 +336,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple",
-      question: "The book &quot;Fahrenheit 451&quot; was written by whom?",
+      question: "The book \"Fahrenheit 451\" was written by whom?",
       correct_answer: "Ray Bradbury",
       incorrect_answers: [
         "R. L. Stine",
@@ -346,7 +346,7 @@ data = { results: [
     },
     {category: "Entertainment: Books",
       type: "multiple", 
-      question: "In Margaret Atwood&#039;s &quot;The Handmaid&#039;s Tale&quot;, what is Offred&#039;s real name is implied to be?",
+      question: "In Margaret Atwood\'s \"The Handmaid\'s Tale\", what is Offred\'s real name is implied to be?",
       correct_answer: "June",
       incorrect_answers: [
         "August",
@@ -364,20 +364,10 @@ data = { results: [
         "Jamuraa"
       ]
     },
-    {category: "Entertainment: Books",
-      type: "multiple",
-      question: "In Alice in Wonderland, what is the name of Alice&#039;s kitten?",
-      correct_answer: "Dinah",
-      incorrect_answers: [
-        "Oscar",
-        "Heath",
-        "Smokey"
-      ]
-    },
     # 11. Entertainment: Film
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?",
+      question: "In the 1984 movie \"The Terminator\", what model number is the Terminator portrayed by Arnold Schwarzenegger?",
       correct_answer: "T-800",
       incorrect_answers: [
         "I-950",
@@ -387,13 +377,13 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "boolean",
-      question: "The movie &quot;The Nightmare before Christmas&quot; was all done with physical objects.",
+      question: "The movie \"The Nightmare before Christmas\" was all done with physical objects.",
       correct_answer: "True",
       incorrect_answers: ["False"]
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "Which movie contains the quote, &quot;Say hello to my little friend!&quot;?",
+      question: "Which movie contains the quote, \"Say hello to my little friend!\" ?",
       correct_answer: "Scarface",
       incorrect_answers: [
         "Reservoir Dogs",
@@ -403,17 +393,17 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;",
+      question: "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
       correct_answer: "Dirty Dancing",
       incorrect_answers: [
         "Three Men and a Baby",
-        "Ferris Bueller&#039;s Day Off",
+        "Ferris Bueller\'s Day Off",
         "Pretty in Pink"
       ]
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?",
+      question: "What is the orange and white bot\'s name in \"Star Wars: The Force Awakens\" ?",
       correct_answer: "BB-8",
       incorrect_answers: [
         "BB-3",
@@ -423,7 +413,7 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "What does TIE stand for in reference to the TIE Fighter in &quot;Star Wars&quot;?",
+      question: "What does TIE stand for in reference to the TIE Fighter in \"Star Wars\" ?",
       correct_answer: "Twin Ion Engine",
       incorrect_answers: [
         "Twin Iron Engine",
@@ -433,7 +423,7 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple", 
-      question: "In the 1964 film &quot;Zulu&quot;, what song does the British Army company sing before the final battle?",
+      question: "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle ?",
       correct_answer: "Men of Harlech",
       incorrect_answers: [
         "Scotland the Brave",
@@ -469,7 +459,7 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "Who played Deputy Marshal Samuel Gerard in the 1993 film &quot;The Fugitive&quot;?",
+      question: "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\" ?",
       correct_answer: "Tommy Lee Jones",
       incorrect_answers: [
         "Harrison Ford",
@@ -479,13 +469,13 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "boolean",
-      question: "Shaquille O&#039;Neal appeared in the 1997 film &quot;Space Jam&quot;.",
+      question: "Shaquille O\'Neal appeared in the 1997 film \"Space Jam\".",
       correct_answer: "False",
       incorrect_answers: ["True"]
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "The 1939 movie &quot;The Wizard of Oz&quot; contained a horse that changed color, what material did they use to achieve this effect?",
+      question: "The 1939 movie \"The Wizard of Oz\" contained a horse that changed color, what material did they use to achieve this effect?",
       correct_answer: "Gelatin",
       incorrect_answers: [
         "Dye",
@@ -500,7 +490,7 @@ data = { results: [
       incorrect_answers: [
         "Good Will Hunting",
         "Birdman",
-        "Schindler&#039;s List"
+        "Schindler\'s List"
       ]
     },
     {category: "Entertainment: Film",
@@ -515,7 +505,7 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "What type of cheese, loved by Wallace and Gromit, had it&#039;s sale prices rise after their successful short films?",
+      question: "What type of cheese, loved by Wallace and Gromit, had it\'s sale prices rise after their successful short films?",
       correct_answer: "Wensleydale",
       incorrect_answers: [
         "Cheddar",
@@ -525,7 +515,7 @@ data = { results: [
     },
     {category: "Entertainment: Film",
       type: "multiple",
-      question: "In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?",
+      question: "In the 1995 film \"Balto\", who are Steele\'s accomplices?",
       correct_answer: "Kaltag, Nikki, and Star",
       incorrect_answers: [
         "Dusty, Kirby, and Ralph",
@@ -540,7 +530,7 @@ data = { results: [
       incorrect_answers: [
         "Fast food",
         "Food stamps",
-        "They weren&#039;t paid"
+        "They weren\'t paid"
       ]
     },
     {category: "Entertainment: Film",
@@ -566,7 +556,7 @@ data = { results: [
     # 12. Entertainment: Music
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "Which English guitarist has the nickname &quot;Slowhand&quot;?",
+      question: "Which English guitarist has the nickname \"Slowhand\"?",
       correct_answer: "Eric Clapton",
       incorrect_answers: [
         "Mark Knopfler",
@@ -586,7 +576,7 @@ data = { results: [
     },
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "Which band released songs such as &quot;Electric Feel&quot;, &quot;Kids&quot;, and &quot;Time to Pretend&quot;?",
+      question: "Which band released songs such as \"Electric Feel\", \"Kids\", and \"Time to Pretend\" ?",
       correct_answer: "MGMT",
       incorrect_answers: [
         "Passion Pit",
@@ -596,7 +586,7 @@ data = { results: [
     },
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "What was the name of singer Frank Ocean&#039;s second studio album, which was released on August 20, 2016?",
+      question: "What was the name of singer Frank Ocean\'s second studio album, which was released on August 20, 2016?",
       correct_answer: "Blonde",
       incorrect_answers: [
         "Brunette",
@@ -610,13 +600,13 @@ data = { results: [
       correct_answer: "The Life of Pablo",
       incorrect_answers: [
         "Kill Urself My Man",
-        "You&#039;ll Cowards Don&#039;t Even Smoke Crack",
-        "Yo Wife Handcuffin&#039; Me"
+        "You\'ll Cowards Don\'t Even Smoke Crack",
+        "Yo Wife Handcuffin\' Me"
       ]
     },
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "Which artist released the 2012 single &quot;Harlem Shake&quot;, which was used in numerous YouTube videos in 2013?",
+      question: "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
       correct_answer: "Baauer",
       incorrect_answers: [
         "RL Grime",
@@ -636,7 +626,7 @@ data = { results: [
     },
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "What animal is featured on the cover of English electronic music group The Prodigy&#039;s album, &quot;The Fat of the Land&quot;?",
+      question: "What animal is featured on the cover of English electronic music group The Prodigy\'s album, \"The Fat of the Land\" ?",
       correct_answer: "Crab",
       incorrect_answers: [
         "Fox",
@@ -646,7 +636,7 @@ data = { results: [
     },
     {category: "Entertainment: Music",
       type: "multiple",
-      question: "Which Beatles album does NOT feature any of the band members on it&#039;s cover?",
+      question: "Which Beatles album does NOT feature any of the band members on it\'s cover?",
       correct_answer: "The Beatles (White Album)",
       incorrect_answers: [
         "Rubber Soul",
@@ -655,8 +645,8 @@ data = { results: [
       ]
     },
     {
-"category": "Entertainment: Film",
-"type": "multiple",
+    "category": "Entertainment: Film",
+  "type": "multiple",
 
 "question": "What was the last Marx Brothers film to feature Zeppo?",
 "correct_answer": "Duck Soup",
@@ -669,7 +659,7 @@ data = { results: [
 {
 "category": "Entertainment: Television",
 "type": "multiple",
-"question": "Which character was played by Dustin Diamond in the sitcom &#039;Saved by the Bell&#039;?",
+"question": "Which character was played by Dustin Diamond in the sitcom \"Saved by the Bell\" ?",
 "correct_answer": "Screech",
 "incorrect_answers": [
 "Zack",
@@ -680,7 +670,7 @@ data = { results: [
 {
 "category": "General Knowledge",
 "type": "multiple",
-"question": "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?",
+"question": "Where is the train station \"Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch\" ?",
 "correct_answer": "Wales",
 "incorrect_answers": [
 "Moldova",
@@ -689,7 +679,7 @@ data = { results: [
 ]
 },
 {
-"category": "Science & Nature",
+"category": "Science \& Nature",
 "type": "multiple",
 "question": "How many objects are equivalent to one mole?",
 "correct_answer": "6.022 x 10^23",
@@ -753,7 +743,7 @@ data = { results: [
 {
 "category": "Politics",
 "type": "boolean",
-"question": "There was a satirical candidate named &quot;Deez Nuts&quot; running in the 2016 US presidential elections.",
+"question": "There was a satirical candidate named \"Deez Nuts\" running in the 2016 US presidential elections.",
 "correct_answer": "True",
 "incorrect_answers": [
 "False"
@@ -762,10 +752,10 @@ data = { results: [
 {
 "category": "History",
 "type": "multiple",
-"question": "Which of the following African countries was most successful in resisting colonization?",
+"question": "Which of the following African countries was most successful in resisting colonization ?",
 "correct_answer": "Ethiopia",
 "incorrect_answers": [
-"C&ocirc;te d&rsquo;Ivoire",
+"C\ôte d\'Ivoire",
 "Congo",
 "Namibia"
 ]
@@ -794,7 +784,7 @@ data = { results: [
 {
 "category": "Entertainment: Music",
 "type": "multiple",
-"question": "Which Queen song was covered by Brittany Murphy in the 2006 film &quot;Happy Feet&quot;?",
+"question": "Which Queen song was covered by Brittany Murphy in the 2006 film \"Happy Feet\" ?",
 "correct_answer": "Somebody to Love",
 "incorrect_answers": [
 "Under Pressure",
@@ -805,7 +795,7 @@ data = { results: [
 {
 "category": "Entertainment: Video Games",
 "type": "multiple",
-"question": "&quot;Tomb Raider&quot; icon Lara Croft was originally called...",
+"question": "\"Tomb Raider\" icon Lara Croft was originally called...",
 "correct_answer": "Laura Cruz",
 "incorrect_answers": [
 "Laura Craft",
@@ -827,7 +817,7 @@ data = { results: [
 {
 "category": "General Knowledge",
 "type": "multiple",
-"question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning &quot;finger pressure&quot;?",
+"question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning \"finger pressure\" ?",
 "correct_answer": "Shiatsu",
 "incorrect_answers": [
 "Ukiyo",
@@ -850,7 +840,7 @@ data = { results: [
 {
 "category": "General Knowledge",
 "type": "multiple",
-"question": "What is the Spanish word for &quot;donkey&quot;?",
+"question": "What is the Spanish word for \"donkey\"?",
 "correct_answer": "Burro",
 "incorrect_answers": [
 "Caballo",
@@ -871,17 +861,17 @@ data = { results: [
 "category": "Entertainment: Video Games",
 "type": "boolean",
 
-"question": "In &quot;Metal Gear Solid 2&quot;, you will see through the eyes of Psycho Mantis if you go first person during his boss fight.",
+"question": "In \"Metal Gear Solid 2\", you will see through the eyes of Psycho Mantis if you go first person during his boss fight.",
 "correct_answer": "True",
 "incorrect_answers": [
 "False"
 ]
 },
 {
-"category": "Science & Nature",
+"category": "Science \& Nature",
 "type": "multiple",
 
-"question": "&quot;The Big Bang Theory&quot; was first theorized by a priest of what religious ideology?",
+"question": "\"The Big Bang Theory\" was first theorized by a priest of what religious ideology?",
 "correct_answer": "Catholic",
 "incorrect_answers": [
 "Christian",
@@ -892,7 +882,7 @@ data = { results: [
 {
 "category": "Entertainment: Video Games",
 "type": "multiple",
-"question": "By how many minutes are you late to work in &quot;Half-Life&quot;?",
+"question": "By how many minutes are you late to work in \"Half-Life\" ?",
 "correct_answer": "30",
 "incorrect_answers": [
 "5",
@@ -903,7 +893,7 @@ data = { results: [
 {
 "category": "Entertainment: Music",
 "type": "multiple",
-"question": "Which of these songs by artist Eminem contain the lyric &quot;Nice to meet you. Hi, my name is... I forgot my name!&quot;?",
+"question": "Which of these songs by artist Eminem contain the lyric \"Nice to meet you. Hi, my name is... I forgot my name!\" ?",
 "correct_answer": "Rain Man",
 "incorrect_answers": [
 "Without Me",
@@ -926,7 +916,7 @@ data = { results: [
 "category": "Entertainment: Music",
 "type": "multiple",
 "question": "What is the relationship between the band members of American rock band King of Leon?",
-"correct_answer": "Brothers &amp; cousins",
+"correct_answer": "Brothers \& cousins",
 "incorrect_answers": [
 "Childhood friends",
 "Former classmates",
@@ -934,7 +924,7 @@ data = { results: [
 ]
 },
 {
-"category": "Science & Nature",
+"category": "Science \& Nature",
 "type": "multiple",
 
 "question": "Which of these is a stop codon in DNA?",
@@ -948,7 +938,7 @@ data = { results: [
 {
 "category": "Entertainment: Video Games",
 "type": "multiple",
-"question": "In Pokemon Red &amp; Blue, what is the name of HM05?",
+"question": "In Pokemon Red \& Blue, what is the name of HM05?",
 "correct_answer": "Flash",
 "incorrect_answers": [
 "Strength",
@@ -978,10 +968,10 @@ data = { results: [
 ]
 },
 {
-"category": "Science & Nature",
+"category": "Science \& Nature",
 "type": "multiple",
 "question": "Who made the discovery of X-rays?",
-"correct_answer": "Wilhelm Conrad R&ouml;ntgen",
+"correct_answer": "Wilhelm Conrad Roentgen",
 "incorrect_answers": [
 "Thomas Alva Edison",
 "James Watt",
@@ -1023,7 +1013,7 @@ data = { results: [
 {
 "category": "Vehicles",
 "type": "multiple",
-"question": "Which car tire manufacturer is famous for its &quot;Eagle&quot; brand of tires, and is the official tire supplier of NASCAR?",
+"question": "Which car tire manufacturer is famous for its \"Eagle\" brand of tires, and is the official tire supplier of NASCAR?",
 "correct_answer": "Goodyear",
 "incorrect_answers": [
 "Pirelli",
@@ -1065,7 +1055,7 @@ data = { results: [
 {
 "category": "Entertainment: Television",
 "type": "multiple",
-"question": "When Donkey Kong died in the &quot;Donkey Kong Country&quot; episode &quot;It&#039;s a Wonderful Life&quot;, who was his guardian angel?",
+"question": "When Donkey Kong died in the \"Donkey Kong Country\" episode \"It\'s a Wonderful Life\", who was his guardian angel?",
 "correct_answer": "Eddie the Mean Old Yeti",
 "incorrect_answers": [
 "Kiddy Kong",
@@ -1076,7 +1066,7 @@ data = { results: [
 {
 "category": "Sports",
 "type": "multiple",
-"question": "Who won the &quot;Champions League&quot; in 1999?",
+"question": "Who won the \"Champions League\" in 1999?",
 "correct_answer": "Manchester United",
 "incorrect_answers": [
 "Barcelona",
@@ -1087,7 +1077,7 @@ data = { results: [
 {
 "category": "General Knowledge",
 "type": "multiple",
-"question": "When did the website &quot;Facebook&quot; launch?",
+"question": "When did the website \"Facebook\" launch?",
 "correct_answer": "2004",
 "incorrect_answers": [
 "2005",
@@ -1099,7 +1089,7 @@ data = { results: [
 "category": "History",
 "type": "boolean",
 
-"question": "During the Winter War, the amount of Soviet Union soliders that died or went missing was five times more than Finland&#039;s.",
+"question": "During the Winter War, the amount of Soviet Union soliders that died or went missing was five times more than Finland\'s.",
 "correct_answer": "True",
 "incorrect_answers": [
 "False"
@@ -1108,7 +1098,7 @@ data = { results: [
 {
 "category": "Entertainment: Music",
 "type": "multiple",
-"question": "Who is the vocalist and frontman of rock band &quot;Guns N&#039; Roses&quot;?",
+"question": "Who is the vocalist and frontman of rock band \"Guns N\' Roses\"?",
 "correct_answer": "Axl Rose",
 "incorrect_answers": [
 "Kurt Cobain",
@@ -1129,9 +1119,9 @@ data = { results: [
 ]
 },
 {
-"category": "Science & Nature",
+"category": "Science \& Nature",
 "type": "multiple",
-"question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
+"question": "What animal takes part in Schr\ödinger\'s most famous thought experiment?",
 "correct_answer": "Cat",
 "incorrect_answers": [
 "Dog",
@@ -1142,7 +1132,7 @@ data = { results: [
 {
 "category": "Entertainment: Video Games",
 "type": "multiple",
-"question": "In which mall does &quot;Dead Rising&quot; take place?",
+"question": "In which mall does \"Dead Rising\" take place?",
 "correct_answer": "Willamette Parkview Mall",
 "incorrect_answers": [
 "Liberty Mall",
@@ -1153,7 +1143,7 @@ data = { results: [
 {
 "category": "Entertainment: Music",
 "type": "multiple",
-"question": "Where did the British Boy Band &quot;Bros&quot; come from?",
+"question": "Where did the British Boy Band \"Bros\" come from?",
 "correct_answer": "Camberley",
 "incorrect_answers": [
 "Guildford",
