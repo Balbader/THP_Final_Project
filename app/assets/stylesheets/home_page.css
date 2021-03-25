@@ -3,7 +3,7 @@ body {
 }
 
 #top_header {
-    background:url("https://cdn.discordapp.com/attachments/822541048059920435/823704463265103902/deer-3275594_1920.jpg");
+    background: url(css/homepage/deer_WP.jpg);
     background-size:cover;
 }
 
