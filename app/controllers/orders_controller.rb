@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
+
   def create
     @session = Stripe::Checkout::Session.create(
       payment_method_types: ["card"],
