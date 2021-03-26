@@ -1,31 +1,23 @@
+# frozen_string_literal: true
+
 class StaticPagesController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def secret
-  end
+  def secret; end
 
-  def home_page
-  end
-  
-  def about_us
-  end
-  
-  def rules
-  end
+  def home_page; end
 
-  def faq
-  end
-  
-  def community
-  end
+  def about_us; end
 
-  def terms
-  end
+  def rules; end
 
-  def privacy
-  end
+  def faq; end
 
-  def loan_rules
-  end
+  def community; end
+
+  def terms; end
+
+  def privacy; end
+
+  def loan_rules; end
 end
