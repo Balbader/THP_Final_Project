@@ -1,6 +1,6 @@
 
 
-
+<%= render "devise/shared/error_messages", resource: resource %>
 <div class="container pt-5 pb-5">
     <div class="main-body">
           <div class="row gutters-sm">
@@ -9,14 +9,14 @@
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
                      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-                      <%= render "devise/shared/error_messages", resource: resource %>
+                      
                         <div>
                           <%= image_tag "avatar3.jpeg", class:"rounded-circle", width:"150" unless current_user.avatar.attached? %>
                           <%= image_tag current_user.avatar, class:"rounded-circle", width:"150" if current_user.avatar.attached? %>
                         </div>
                         <hr>
-                        <div class="fileUpload btn edit">
-                            <span>Update photo</span>
+                        <div class="fileUpload btn edit text-center">
+                            <span>Change photo</span>
                             <input type="file" class="upload" <%= f.file_field :avatar, class:"btn edit"%>
                         </div>
                               
@@ -32,26 +32,29 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <div class="user_info container text-center align-items-center">
-                    <div class="field pt-3">
-                      <%= f.text_field :first_name, placeholder: "First Name", autofocus: true, autocomplete: "first_name" %>
-                    </div>
-                    <div class="field pt-3">
-                      <%= f.text_field :last_name, placeholder: "Last Name", autofocus: true, autocomplete: "last_name" %>
-                    </div>  
-                    <div class="field pt-3">
-                      <%= f.text_field :age, placeholder: "Age", autofocus: true, autocomplete: "age" %>
-                    </div>
-                    <div class="field pt-3">
-                      <%= f.password_field :current_password, placeholder: "Enter Password",  class:" phone box-mdp mb-4" %>
-                    </div>
-                    <div class="actions">
-                      <%= f.submit "Update Info", class:"edit btn" %>
-                    </div>
-                    <% end %>
+                  
+                <div class="form-input"> <i class="fa fa-user"></i> 
+                   <%= f.text_field :first_name, placeholder: "First Name", autofocus: true, autocomplete: "first_name",class:"form-control" %>
+                </div>
+                <div class="form-input"> <i class="fa fa-user"></i> 
+                   <%= f.text_field :last_name, placeholder: "Last Name", autofocus: true, autocomplete: "last_name",class:"form-control" %>
+                </div>
+                <div class="form-input"><i class="fa fa-user"></i>
+                   <%= f.text_field :age, autofocus: true, autocomplete: "age", class:"form-control", placeholder: "Age" %>
+                </div>
+                <div class="form-input"> <i class="fa fa-exclamation-triangle"></i>
+                    <%= f.password_field :current_password, autocomplete: "new-password", class:"form-control", placeholder:"Type your current password if you want to save changes"  %>
+                </div>
+                <br>
+                     <%= f.submit "Update Info", class:"edit btn" %>
+                <%end%>
+                         
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div class="card cancel">
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center text-center">
@@ -69,3 +72,4 @@
     </div>
   </div>
 </div>
+
