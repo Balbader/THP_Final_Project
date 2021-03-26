@@ -1,7 +1,3 @@
-.py-8{
-    padding: 8rem;
-}
-
 .pb-8{
     padding-bottom: 8rem;
 }
@@ -17,3 +13,6 @@ hr.one {
 hr.two {
     border-top: 1px dotted rgb(226, 200, 238);
   }
+.h6:hover{
+    cursor: pointer;
+}
