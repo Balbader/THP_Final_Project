@@ -1,37 +1,27 @@
 <%= stylesheet_link_tag "registration" %>
-<div class="container pt-5 pb-5" id="registration">
-  <div class="background_box">
-    <div class="card">
-      <div class="card-body">
-        <div class="d-flex flex-column align-items-center text-left">
-            <h3>Sign up</h3>
-            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= render "devise/shared/error_messages", resource: resource %>
-
-            <div class="form-group pt-4">
-              <label for="formGroupExampleInput">Email</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Email" <%= f.email_field :email, autofocus: true, autocomplete: "email" %></input>
+<%= render "devise/shared/error_messages", resource: resource %>  
+<div class="container mt-5 mb-5">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+            <div class="card px-5 py-5"> <span class="circle"><i class="fa fa-check"></i></span>
+                <h5 class="mt-3">Sign up <br> 
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                
+                <div class="form-input"> <i class="fa fa-envelope"></i> 
+                   <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", placeholder:"Email"%>
+                </div>
+                <div class="form-input"> <i class="fa fa-lock"></i>
+                    <%= f.password_field :password, autocomplete: "new-password", class:"form-control", placeholder:"Password"  %>
+                </div>
+                <div class="form-input"> <i class="fa fa-lock"></i> 
+                    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm password" %>
+                </div>
+                <br>
+                <%= f.submit "Sign up", class:"edit btn pb-3" %>  
+                <br>
+                <div><span>Already a member?</span> <%= render "devise/shared/links", class:"text-center mt-4" %></div>
+              <%end%>  
             </div>
-
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Password</label>
-               <input type="password" id="inputPassword" class="form-control" placeholder="Enter Password" required="" <%= f.password_field :password, autocomplete: "new-password" %></input>
-            </div>
-
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Password Confirmation</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" required="" <%= f.password_field :password_confirmation, autocomplete: "new-password" %></input>
-            </div>
-
-            <div class="actions pt-4">
-              <input type="submit" class="edit btn pb-3" value="Sign up"<%= f.submit "Sign up" %></input>
-              <% end %>
-              <p class="pt-2 pl-2">Already a Member? <%= render "devise/shared/links" %></p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
