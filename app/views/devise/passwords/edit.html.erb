@@ -7,6 +7,8 @@
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
+              <div class="d-flex flex-column align-items-center text-left">
+
     <%= f.hidden_field :reset_password_token %>
 
             <div class="form-group pt-4">
@@ -23,11 +25,13 @@
   </div>
 </div>
     <div class="actions pt-4">
-    <input type="submit" class="edit btn pb-3" value="Change my password"<%= f.submit "Change my password" %></input>
+    <input type="submit" class="edit btn pb-3" value="Change"<%= f.submit "Change" %></input>
 <% end %>
+        <div class="d-flex flex-column align-items-center text-left">
 
 <%= render "devise/shared/links" %>
 </div>
     </div>
   </div>
+</div></div>
 </div>
