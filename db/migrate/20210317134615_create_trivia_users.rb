@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateTriviaUsers < ActiveRecord::Migration[6.1]
   def change
     create_table :trivia_users do |t|

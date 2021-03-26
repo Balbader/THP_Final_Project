@@ -1,22 +1,23 @@
+# frozen_string_literal: true
+
 class UserMailer < ApplicationMailer
-    default from: 'ludeeorg@gmail.com'
- 
-    def welcome_email(user)
-        @user = user
-        mail(
-          from: 'ludeeorg@gmail.com',
-          to: @user.email,
-          #to: email_address_with_name(@user.email, @user.name),
-          subject: 'Welcome to the Ludee.org',
-        )
-      end
+  default from: 'ludeeorg@gmail.com'
 
-      def order_email(user)
-        @user = User.find(user)
+  def welcome_email(user)
+    @user = user
+    mail(
+      from: 'ludeeorg@gmail.com',
+      to: @user.email,
+      # to: email_address_with_name(@user.email, @user.name),
+      subject: 'Welcome to the Ludee.org'
+    )
+  end
 
-        @url = 'https://ludee-org.herokuapp.com/'
+  def order_email(user)
+    @user = User.find(user)
 
-        mail(to: @user.email, subject: 'Ludee subscribe payment') 
-      end
+    @url = 'https://ludee-org.herokuapp.com/'
+
+    mail(to: @user.email, subject: 'Ludee subscribe payment')
+  end
 end
-
