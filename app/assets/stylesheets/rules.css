@@ -126,5 +126,5 @@ main-timeline{
 
 .bg-purple{
     background: rgb(70,3,150);
-    background: radial-gradient(circle, #411d55    0%, rgba(0,0,0,1) 60%);
+    background: radial-gradient(circle, #411d55    0%, #100F10 60%);
 }
