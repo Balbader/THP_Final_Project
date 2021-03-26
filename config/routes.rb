@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   root 'static_pages#home_page'
-  get 'static_pages/secret'
-
-  get 'static_pages/stripe_button'
 
   # Static Pages Scope
   scope '/', controller: :static_pages do
@@ -12,6 +9,7 @@ Rails.application.routes.draw do
   resources :categories, only: [:show, :index]
   resources :trivia
   resources :answers
+  
   scope '/trivia' do
     post ':id', to: 'trivia#trivia_answer', as: 'trivia_answer'
   end
