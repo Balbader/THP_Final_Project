@@ -1,33 +1,23 @@
 <%= stylesheet_link_tag "registration" %>
-<div class="container pt-5 pb-5" id="registration">
-  <div class="background_box">
-    <div class="card">
-      <div class="card-body">
-        <div class="d-flex flex-column align-items-center text-left">
-
-      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
-    <%= f.hidden_field :reset_password_token %>
-
-            <div class="form-group pt-4">
-    <%= f.label :password, "New password" %><br />
-    <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-    <% end %>
-    <%= f.password_field :password, autofocus: true, autocomplete: "new-password" %>
-  </div>
-
-            <div class="form-group pt-4">
-    <%= f.label :password_confirmation, "Confirm new password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-</div>
-    <div class="actions pt-4">
-    <input type="submit" class="edit btn pb-3" value="Change my password"<%= f.submit "Change my password" %></input>
-<% end %>
-
-<%= render "devise/shared/links" %>
-</div>
+<%= render "devise/shared/error_messages", resource: resource %>  
+<div class="container mt-5 mb-5">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+            <div class="card px-5 py-5"> <span class="circle"><i class="fa fa-check"></i></span>
+                <h5 class="mt-3"> New password <br> 
+                 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+                <%= f.hidden_field :reset_password_token %>
+                <div class="form-input"> <i class="fa fa-lock"></i>
+                    <%= f.password_field :password, autocomplete: "new-password", class:"form-control", placeholder:"Password"  %>
+                </div>
+                <div class="form-input"> <i class="fa fa-lock"></i> 
+                    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm password" %>
+                </div>
+                <br>
+                <%= f.submit "Change", class:"edit btn pb-3" %>  
+                <br>
+              <%end%>  
+            </div>
+        </div>
     </div>
-  </div>
 </div>
