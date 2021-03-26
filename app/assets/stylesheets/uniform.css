@@ -16,3 +16,6 @@ hr.two {
 .h6:hover{
     cursor: pointer;
 }
+.py-8{
+     padding: 8rem;
+ }
