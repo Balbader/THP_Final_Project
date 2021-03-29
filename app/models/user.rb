@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         has_many :trivia_users
-         has_many :trivia, through: :trivia_users
-         has_one_attached :avatar
+  has_many :trivia_users
+  has_many :trivia, through: :trivia_users
+  has_one_attached :avatar
 
-         after_create :welcome_send
+  after_create :welcome_send
 
-         def welcome_send
-           UserMailer.welcome_email(self).deliver_now
-         end
+  def welcome_send
+    UserMailer.welcome_email(self).deliver_now
+  end
 end

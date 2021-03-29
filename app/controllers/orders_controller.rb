@@ -1,19 +1,21 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   def create
     @session = Stripe::Checkout::Session.create(
-      payment_method_types: ["card"],
+      payment_method_types: ['card'],
       line_items: [
         {
-          name: "Ludee-org Stripe Checkout",
+          name: 'Ludee-org Stripe Checkout',
           amount: 1000,
-          currency: "eur",
-          quantity: 1,
-        },        
+          currency: 'eur',
+          quantity: 1
+        }
       ],
-      success_url: orders_url + '?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: root_url,
+      success_url: "#{orders_url}?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: root_url
     )
     respond_to do |format|
       format.js
@@ -26,6 +28,5 @@ class OrdersController < ApplicationController
     UserMailer.order_email(current_user.id).deliver_now
   end
 
-  def cancel
-  end
+  def cancel; end
 end
