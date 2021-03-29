@@ -115,7 +115,7 @@
                  <%= image_tag "avatar3.jpeg", class:"img-fluid mt-3", width:"50" unless user.avatar.attached? %>
                  <%= image_tag user.avatar, class:"img-fluid mt-3", width:"50" if user.avatar.attached? %>
                </p>
-               <h4 class="card-title text-muted"><%= "Ludee Player"if user.first_name == nil &&  user.last_name== nil %>
+               <h4 class="card-title text-muted"><%= "Ludee Player"if user.first_name == nil &&  user.last_name== nil || user.first_name == "" &&  user.last_name== "" %>
                <%= user.last_name%> <%= user.first_name%></h4>
                 <p class="card-text text-white">Challenger score :<%= user.score%> </p>
             </div>
